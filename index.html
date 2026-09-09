@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tauranga Classic Motorcycle Club</title>
+<meta name="description" content="Tauranga Classic Motorcycle Club — classic motorcycles, good roads and good company since 1976.">
+<style>
+:root {
+  --navy:#132b42;
+  --navy2:#0d1f30;
+  --gold:#cea136;
+  --cream:#f7f5ef;
+  --ink:#202020;
+  --muted:#666;
+  --white:#fff;
+  --line:#ddd7ca;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.5}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{background:var(--navy);color:#fff}
+.brand{display:flex;align-items:center;gap:22px;padding:18px 0}
+.brand img{width:112px;height:112px;object-fit:contain}
+.brand h1{margin:0;font-size:clamp(2rem,4vw,3.5rem);line-height:.98;letter-spacing:.02em}
+.brand .sub{color:var(--gold);font-weight:700;letter-spacing:.08em;margin-top:10px}
+nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.navbar{display:flex;gap:20px;align-items:center;overflow-x:auto;white-space:nowrap;padding:0 24px}
+.navbar a{text-decoration:none;color:var(--navy);font-weight:700;font-size:.88rem;padding:17px 0}
+.navbar a:hover{color:var(--gold)}
+.hero{min-height:510px;display:grid;place-items:center;position:relative;overflow:hidden;color:#fff;background:
+linear-gradient(rgba(5,15,22,.45),rgba(5,15,22,.65)),
+linear-gradient(140deg,#6f8068 0%,#38473d 42%,#526352 42%,#2d3431 68%,#49574a 68%)}
+.hero:after{content:"";position:absolute;left:48%;bottom:-10%;width:220px;height:110%;background:#303030;transform:perspective(600px) rotateX(56deg);clip-path:polygon(42% 0,58% 0,100% 100%,0 100%);opacity:.8}
+.hero .content{position:relative;z-index:2;max-width:1050px;width:100%;padding:80px 24px}
+.hero h2{font-size:clamp(2.6rem,6vw,5rem);line-height:.98;margin:0 0 22px;text-transform:uppercase;max-width:900px}
+.hero p{font-size:clamp(1.1rem,2.2vw,1.45rem);max-width:760px;margin-bottom:30px}
+.button{display:inline-block;background:var(--gold);color:var(--navy);font-weight:800;text-decoration:none;padding:14px 22px;border-radius:7px}
+.section{padding:72px 0}
+.kicker{color:var(--gold);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.92rem}
+h3{font-size:clamp(2rem,4vw,3rem);color:var(--navy);margin:.35rem 0 1rem}
+.lead{font-size:1.2rem;max-width:880px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px;box-shadow:0 7px 20px rgba(0,0,0,.04);position:relative}
+.card:before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:var(--gold);border-radius:10px 10px 0 0}
+.card h4{color:var(--navy);font-size:1.55rem;margin:12px 0 8px}
+.card .mini{color:var(--gold);font-weight:800;text-transform:uppercase;font-size:.86rem}
+.card a{color:var(--navy);font-weight:800;text-decoration:none}
+.band{background:var(--navy);color:#fff}
+.band h3{color:#fff}
+.columns{display:grid;grid-template-columns:1.2fr .8fr;gap:42px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px}
+.event{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.event:last-child{border-bottom:0}
+.event strong{color:var(--navy)}
+.archive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
+.archive-item{padding:26px;border:1px solid rgba(255,255,255,.2);border-radius:10px}
+.archive-item h4{margin:0 0 8px;font-size:1.35rem;color:#fff}
+footer{background:var(--navy2);color:#d6dce1;padding:42px 0}
+footer strong{color:#fff}
+footer a{color:var(--gold)}
+.notice{font-size:.88rem;color:var(--muted);margin-top:24px}
+.photo-placeholder{height:260px;border-radius:10px;background:linear-gradient(135deg,#9ba58d,#576858);display:grid;place-items:center;color:white;font-weight:800;text-align:center;padding:20px}
+@media (max-width:850px){
+  .cards,.archive-grid,.columns{grid-template-columns:1fr}
+  .brand img{width:86px;height:86px}
+  .event{grid-template-columns:1fr;gap:4px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap brand">
+    <img src="assets/tcmcc-badge.png" alt="Tauranga Classic Motorcycle Club badge">
+    <div>
+      <h1>TAURANGA CLASSIC<br>MOTORCYCLE CLUB</h1>
+      <div class="sub">ESTABLISHED 1976 • CELEBRATING 50 YEARS</div>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap navbar">
+    <a href="#home">HOME</a>
+    <a href="#anniversary">50TH ANNIVERSARY</a>
+    <a href="#rides">RIDES & EVENTS</a>
+    <a href="#club">OUR CLUB</a>
+    <a href="#archives">ARCHIVES</a>
+    <a href="#newsletters">NEWSLETTERS</a>
+    <a href="#join">JOIN US</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</nav>
+
+<main>
+<section id="home" class="hero">
+  <div class="content">
+    <h2>Classic motorcycles.<br>Good roads. Good company.</h2>
+    <p>Fifty years of motorcycling, friendship and shared knowledge in Tauranga and the Bay of Plenty.</p>
+    <a class="button" href="#club">DISCOVER THE CLUB</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="kicker">Welcome to TCMCC</div>
+    <h3>Keeping classic motorcycling alive since 1976</h3>
+    <p class="lead">The Tauranga Classic Motorcycle Club brings together people with an interest in classic motorcycles — whether you ride them, restore them, collect them or simply enjoy them.</p>
+
+    <div class="cards">
+      <article class="card" id="anniversary">
+        <div class="mini">24–26 October 2026</div>
+        <h4>50th Anniversary</h4>
+        <p><strong>Classic Flyers Museum, Tauranga</strong></p>
+        <p>Motorcycle display, start-up sessions, visiting clubs and our Sunday celebration luncheon.</p>
+        <a href="#anniversary-detail">MORE INFORMATION →</a>
+      </article>
+      <article class="card">
+        <div class="mini">Every week</div>
+        <h4>Come for a ride</h4>
+        <p>Wednesday rides, weather permitting. Old Bikes Run on the first Sunday of each month.</p>
+        <p>Club Night: first Tuesday of the month at 7.30 pm.</p>
+        <a href="#rides">RIDE INFORMATION →</a>
+      </article>
+      <article class="card">
+        <div class="mini">New members welcome</div>
+        <h4>Join the club</h4>
+        <p>Own an old bike — or simply love them? Come along, meet the members and share the camaraderie.</p>
+        <a href="#join">MEMBERSHIP →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="anniversary-detail" class="section band">
+  <div class="wrap columns">
+    <div>
+      <div class="kicker">Labour Weekend 2026</div>
+      <h3>Celebrating 50 Years — 1976 to 2026</h3>
+      <p class="lead">Our 50th celebration brings classic motorcycles and classic aviation together at Classic Flyers Museum, Tauranga.</p>
+      <p>Over the weekend we will display a wide range of motorcycles gathered by members and friends of the Club. There will be start-up sessions, visiting clubs and a Sunday celebration luncheon.</p>
+    </div>
+    <div class="panel">
+      <h4 style="margin-top:0;color:var(--navy);font-size:1.5rem">50th Anniversary</h4>
+      <p><strong>24–26 October 2026</strong><br>Classic Flyers Museum<br>Tauranga</p>
+      <p><strong>Friday & Saturday</strong><br>Motorcycle display<br>Start-up sessions<br>Visiting clubs and enthusiasts</p>
+      <p><strong>Sunday</strong><br>50th Anniversary celebration luncheon</p>
+    </div>
+  </div>
+</section>
+
+<section id="rides" class="section">
+  <div class="wrap">
+    <div class="kicker">Out & about</div>
+    <h3>Rides & Events</h3>
+    <div class="columns">
+      <div>
+        <div class="event"><strong>Wednesday Rides</strong><span>Weekly, weather permitting. Details are circulated through the Wednesday Riders group.</span></div>
+        <div class="event"><strong>Old Bikes Run</strong><span>First Sunday each month. A short, easy run aimed at getting the older bikes out and about, usually with a public stop before returning to the Clubrooms.</span></div>
+        <div class="event"><strong>Club Night</strong><span>First Tuesday of each month at 7.30 pm.</span></div>
+      </div>
+      <div class="photo-placeholder">
+        REPLACE THIS WITH A CLUB RIDE PHOTO
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="club" class="section" style="background:#fff">
+  <div class="wrap">
+    <div class="kicker">Our club</div>
+    <h3>Fifty years of motorcycling and friendship</h3>
+    <p class="lead">The Tauranga Classic Motorcycle Club was established in 1976 by enthusiasts brought together by their interest in older motorcycles. Fifty years later the motorcycles remain important — but so do the friendships, knowledge and camaraderie that have grown around them.</p>
+    <p>Our members own and ride motorcycles spanning many decades and many marques. Some are beautifully restored, some remarkably original and others are simply old motorcycles still doing what they were built to do — being ridden.</p>
+  </div>
+</section>
+
+<section id="archives" class="section band">
+  <div class="wrap">
+    <div class="kicker">From the archives</div>
+    <h3>50 years of motorcycles, people and stories</h3>
+    <div class="archive-grid">
+      <div class="archive-item"><h4>Letters from the Past</h4><p>Selected extracts and scans from the Club's earliest newsletters.</p></div>
+      <div class="archive-item"><h4>1976 — Where it began</h4><p>Stories, photographs and names from the first years of TCMCC.</p></div>
+      <div class="archive-item"><h4>Motorcycle Stories</h4><p>Members' machines, unusual histories and stories from another era.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="newsletters" class="section">
+  <div class="wrap">
+    <div class="kicker">Club news</div>
+    <h3>Newsletters</h3>
+    <div class="panel">
+      <p><strong>September 2026</strong> — Club News</p>
+      <p>This area can hold each newsletter as a PDF link as they are published, creating a permanent club archive.</p>
+    </div>
+  </div>
+</section>
+
+<section id="join" class="section" style="background:#fff">
+  <div class="wrap columns">
+    <div>
+      <div class="kicker">Join us</div>
+      <h3>Interested in classic motorcycles?</h3>
+      <p class="lead">You don't need a concours restoration or a shed full of motorcycles to belong to TCMCC. If you have an interest in classic motorcycles, we'd be pleased to hear from you.</p>
+    </div>
+    <div class="panel">
+      <p><strong>Come to a Club Night</strong><br>First Tuesday of the month — 7.30 pm</p>
+      <p><strong>Come on a Ride</strong><br>Contact the Club for the next ride details.</p>
+      <p><a class="button" href="mailto:taurangaclassicmcc@gmail.com">EMAIL THE CLUB</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <p><strong>TAURANGA CLASSIC MOTORCYCLE CLUB</strong></p>
+    <p>Email: <a href="mailto:taurangaclassicmcc@gmail.com">taurangaclassicmcc@gmail.com</a><br>
+    Facebook: Tauranga Classic Motorcycle Club</p>
+    <p>Established 1976 • Tauranga, New Zealand</p>
+  </div>
+</footer>
+
+</body>
+</html>
