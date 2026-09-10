@@ -1,0 +1,264 @@
+/* TCMCC mobile + typography update
+   Designed as a non-destructive presentation layer for the current site. */
+
+:root{
+  --mobile-break: 760px;
+}
+
+/* Sentence case: keep the club identity, but stop forcing ordinary UI text to capitals */
+.hero h2,
+.kicker,
+.card .mini{
+  text-transform:none !important;
+}
+
+.navbar a,
+.button,
+.card a{
+  text-transform:none !important;
+  letter-spacing:normal;
+}
+
+/* More comfortable reading */
+body{
+  -webkit-text-size-adjust:100%;
+}
+
+.button{
+  min-height:46px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1.2;
+}
+
+.navbar a{
+  min-height:48px;
+  display:flex;
+  align-items:center;
+}
+
+/* Mobile menu control - hidden on desktop */
+.mobile-menu-toggle{
+  display:none;
+  width:100%;
+  border:0;
+  background:#fff;
+  color:var(--navy);
+  font:inherit;
+  font-weight:800;
+  font-size:1rem;
+  text-align:left;
+  padding:14px 24px;
+  cursor:pointer;
+  min-height:50px;
+}
+
+.mobile-menu-toggle .menu-icon{
+  display:inline-block;
+  width:1.25em;
+  margin-right:.55em;
+  font-size:1.15em;
+}
+
+@media (max-width:760px){
+  .wrap{
+    padding-left:18px;
+    padding-right:18px;
+  }
+
+  /* Compact identity block without making it tiny */
+  .brand{
+    gap:14px;
+    padding:12px 0;
+  }
+
+  .brand img{
+    width:68px !important;
+    height:68px !important;
+    flex:0 0 auto;
+  }
+
+  .brand h1{
+    font-size:clamp(1.35rem,6.3vw,1.8rem);
+    line-height:1.02;
+    letter-spacing:.01em;
+  }
+
+  .brand .sub{
+    margin-top:6px;
+    font-size:.74rem;
+    line-height:1.25;
+    letter-spacing:.035em;
+  }
+
+  /* Real mobile menu instead of a horizontally scrolling row */
+  nav{
+    position:sticky;
+    top:0;
+  }
+
+  .mobile-menu-toggle{
+    display:block;
+  }
+
+  .navbar{
+    display:none !important;
+    overflow:visible !important;
+    white-space:normal !important;
+    padding:0 18px 12px !important;
+    gap:0 !important;
+    flex-direction:column;
+    align-items:stretch !important;
+    border-top:1px solid var(--line);
+  }
+
+  nav.mobile-open .navbar{
+    display:flex !important;
+  }
+
+  .navbar a{
+    padding:12px 4px !important;
+    min-height:46px;
+    border-bottom:1px solid var(--line);
+    font-size:1rem !important;
+  }
+
+  .navbar a:last-child{
+    border-bottom:0;
+  }
+
+  /* Hero: keep impact but don't consume a whole phone screen */
+  .hero{
+    min-height:390px !important;
+  }
+
+  .hero .content{
+    padding:52px 18px 58px !important;
+  }
+
+  .hero h2{
+    font-size:clamp(2.15rem,10.5vw,3.25rem) !important;
+    line-height:1.02 !important;
+    margin-bottom:18px !important;
+    max-width:100%;
+  }
+
+  .hero p{
+    font-size:1.08rem !important;
+    line-height:1.5;
+    margin-bottom:24px !important;
+  }
+
+  /* Less empty scrolling */
+  .section{
+    padding:42px 0 !important;
+  }
+
+  h3{
+    font-size:clamp(1.8rem,8.5vw,2.35rem) !important;
+    line-height:1.08;
+  }
+
+  .lead{
+    font-size:1.08rem !important;
+  }
+
+  .cards,
+  .archive-grid,
+  .columns{
+    grid-template-columns:1fr !important;
+    gap:18px !important;
+  }
+
+  .cards{
+    margin-top:26px !important;
+  }
+
+  .card,
+  .panel,
+  .archive-item{
+    padding:22px !important;
+  }
+
+  .event{
+    grid-template-columns:1fr !important;
+    gap:5px !important;
+    padding:15px 0 !important;
+  }
+
+  /* Useful actions should be easy to hit with a thumb */
+  .button{
+    width:100%;
+    padding:14px 18px !important;
+    min-height:48px;
+    text-align:center;
+  }
+
+  .card a{
+    display:inline-flex;
+    align-items:center;
+    min-height:44px;
+    padding:5px 0;
+  }
+
+  /* Gallery: two across on ordinary phones, one across on very narrow screens */
+  .photo-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:10px !important;
+  }
+
+  .gallery-group{
+    margin-top:24px !important;
+  }
+
+  /* Existing era strip remains swipeable, but uses more of the screen */
+  .classic-era-grid img{
+    flex-basis:82vw !important;
+    width:82vw !important;
+  }
+
+  footer{
+    padding:32px 0 !important;
+  }
+
+  /* Don't let local editing controls obscure phone content */
+  .editbar{
+    right:10px !important;
+    bottom:10px !important;
+    left:10px;
+  }
+
+  .editbar button{
+    min-height:44px;
+  }
+}
+
+@media (max-width:420px){
+  .brand img{
+    width:58px !important;
+    height:58px !important;
+  }
+
+  .brand h1{
+    font-size:1.28rem;
+  }
+
+  .brand .sub{
+    font-size:.68rem;
+  }
+
+  .photo-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .hero h2{
+    font-size:2.15rem !important;
+  }
+}
+
+/* Respect accessibility preferences */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .photo-grid img{transition:none !important}
+}
