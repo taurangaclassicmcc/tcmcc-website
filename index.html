@@ -72,6 +72,16 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
   .brand img{width:86px;height:86px}
   .event{grid-template-columns:1fr;gap:4px}
 }
+
+    .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+    .photo-grid a{display:block;overflow:hidden;border-radius:10px;background:#eee;aspect-ratio:4/3}
+    .photo-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .2s ease}
+    .photo-grid a:hover img{transform:scale(1.025)}
+    .gallery-group{margin-top:30px}
+    .gallery-group h4{margin:0 0 8px;color:#102a43;font-size:1.15rem}
+    @media(max-width:800px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.photo-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -92,7 +102,8 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     <a href="#rides">RIDES & EVENTS</a>
     <a href="#club">OUR CLUB</a>
     <a href="#archives">ARCHIVES</a>
-    <a href="#newsletters">NEWSLETTERS</a>
+    <a href="#photos">PHOTOS</a>
+      <a href="#newsletters">NEWSLETTERS</a>
     <a href="#join">JOIN US</a>
     <a href="#contact">CONTACT</a>
   </div>
@@ -197,6 +208,34 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     </div>
   </div>
 </section>
+
+<section id="photos" class="section">
+  <div class="wrap">
+    <div class="kicker">Club life</div>
+    <h3>Photos</h3>
+    <p>Motorcycles, club runs and some of the roads that make getting there half the fun.</p>
+<div class="gallery-group"><h4>On the Road</h4><div class="photo-grid">
+<a href="assets/gallery/wed-ride-bikes.jpg" target="_blank" rel="noopener"><img src="assets/gallery/wed-ride-bikes.jpg" alt="On the Road" loading="lazy"></a>
+<a href="assets/gallery/coastal-church-stop.jpg" target="_blank" rel="noopener"><img src="assets/gallery/coastal-church-stop.jpg" alt="On the Road" loading="lazy"></a>
+<a href="assets/gallery/coastal-riders.jpg" target="_blank" rel="noopener"><img src="assets/gallery/coastal-riders.jpg" alt="On the Road" loading="lazy"></a>
+<a href="assets/gallery/mountain-ride.jpg" target="_blank" rel="noopener"><img src="assets/gallery/mountain-ride.jpg" alt="On the Road" loading="lazy"></a>
+<a href="assets/gallery/coastal-road-riders.jpg" target="_blank" rel="noopener"><img src="assets/gallery/coastal-road-riders.jpg" alt="On the Road" loading="lazy"></a>
+</div></div>
+<div class="gallery-group"><h4>Old Bikes & Club Runs</h4><div class="photo-grid">
+<a href="assets/gallery/club-run-lineup.jpg" target="_blank" rel="noopener"><img src="assets/gallery/club-run-lineup.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+<a href="assets/gallery/ride-start-lineup.jpg" target="_blank" rel="noopener"><img src="assets/gallery/ride-start-lineup.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+<a href="assets/gallery/classic-bike-lineup.jpg" target="_blank" rel="noopener"><img src="assets/gallery/classic-bike-lineup.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+<a href="assets/gallery/club-gathering-bikes.jpg" target="_blank" rel="noopener"><img src="assets/gallery/club-gathering-bikes.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+<a href="assets/gallery/garage-visit.jpg" target="_blank" rel="noopener"><img src="assets/gallery/garage-visit.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+<a href="assets/gallery/club-social-stop.jpg" target="_blank" rel="noopener"><img src="assets/gallery/club-social-stop.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+</div></div>
+<div class="gallery-group"><h4>Classic Motorcycles</h4><div class="photo-grid">
+<a href="assets/gallery/vincent-classic.jpg" target="_blank" rel="noopener"><img src="assets/gallery/vincent-classic.jpg" alt="Classic Motorcycles" loading="lazy"></a>
+<a href="assets/gallery/matchless-g3ls.jpg" target="_blank" rel="noopener"><img src="assets/gallery/matchless-g3ls.jpg" alt="Classic Motorcycles" loading="lazy"></a>
+<a href="assets/gallery/norton-classic.jpg" target="_blank" rel="noopener"><img src="assets/gallery/norton-classic.jpg" alt="Classic Motorcycles" loading="lazy"></a>
+<a href="assets/gallery/triumph-tiger.jpg" target="_blank" rel="noopener"><img src="assets/gallery/triumph-tiger.jpg" alt="Classic Motorcycles" loading="lazy"></a>
+</div></div>
+</div></section>
 
 <section id="newsletters" class="section">
   <div class="wrap">
