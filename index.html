@@ -82,6 +82,37 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     @media(max-width:800px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:520px){.photo-grid{grid-template-columns:1fr}}
 
+
+    .classic-era-strip{
+      background:var(--navy2);
+      padding:8px;
+    }
+    .classic-era-grid{
+      max-width:1500px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:8px;
+    }
+    .classic-era-grid img{
+      width:100%;
+      aspect-ratio:4/3;
+      object-fit:cover;
+      display:block;
+    }
+    @media(max-width:800px){
+      .classic-era-grid{
+        display:flex;
+        overflow-x:auto;
+        scroll-snap-type:x mandatory;
+      }
+      .classic-era-grid img{
+        flex:0 0 72vw;
+        width:72vw;
+        scroll-snap-align:start;
+      }
+    }
+
 </style>
 </head>
 <body>
@@ -117,6 +148,17 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     <a class="button" href="#club">DISCOVER THE CLUB</a>
   </div>
 </section>
+
+<section class="classic-era-strip" aria-label="Classic motorcycles through the eras">
+  <div class="classic-era-grid">
+    <img src="assets/eras/potter-early-motorcycle.jpg" alt="Early pioneering motorcycle">
+    <img src="assets/eras/matchless-on-road.jpg" alt="Classic Matchless motorcycle being ridden">
+    <img src="assets/gallery/norton-classic.jpg" alt="Classic Norton motorcycle">
+    <img src="assets/eras/custom-scooter.jpg" alt="Custom classic scooter">
+    <img src="assets/gallery/triumph-tiger.jpg" alt="Yellow Triumph Tiger">
+  </div>
+</section>
+
 
 <section class="section">
   <div class="wrap">
