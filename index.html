@@ -72,6 +72,54 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
   .brand img{width:86px;height:86px}
   .event{grid-template-columns:1fr;gap:4px}
 }
+
+    .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+    .photo-grid a{display:block;overflow:hidden;border-radius:10px;background:#eee;aspect-ratio:4/3}
+    .photo-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .2s ease}
+    .photo-grid a:hover img{transform:scale(1.025)}
+    .gallery-group{margin-top:30px}
+    .gallery-group h4{margin:0 0 8px;color:#102a43;font-size:1.15rem}
+    @media(max-width:800px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.photo-grid{grid-template-columns:1fr}}
+
+
+    .classic-era-strip{
+      background:var(--navy2);
+      padding:8px;
+    }
+    .classic-era-grid{
+      max-width:1700px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:8px;
+    }
+    .classic-era-grid img{
+      width:100%;
+      height:285px;
+      object-fit:cover;
+      display:block;
+    }
+    .classic-era-grid img:nth-child(4){
+      object-fit:contain;
+      object-position:center center;
+      background:var(--navy2);
+    }
+    @media(max-width:800px){
+      .classic-era-grid{
+        display:flex;
+        overflow-x:auto;
+        scroll-snap-type:x mandatory;
+      }
+      .classic-era-grid img{
+        flex:0 0 72vw;
+        width:72vw;
+        height:auto;
+        aspect-ratio:4/3;
+        scroll-snap-align:start;
+      }
+    }
+
 </style>
 </head>
 <body>
@@ -92,7 +140,8 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     <a href="#rides">RIDES & EVENTS</a>
     <a href="#club">OUR CLUB</a>
     <a href="#archives">ARCHIVES</a>
-    <a href="#newsletters">NEWSLETTERS</a>
+    <a href="#photos">PHOTOS</a>
+      <a href="#newsletters">NEWSLETTERS</a>
     <a href="#join">JOIN US</a>
     <a href="#contact">CONTACT</a>
   </div>
@@ -106,6 +155,17 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     <a class="button" href="#club">DISCOVER THE CLUB</a>
   </div>
 </section>
+
+<section class="classic-era-strip" aria-label="Classic motorcycles through the eras">
+  <div class="classic-era-grid">
+    <img src="assets/eras/potter-early-motorcycle.jpg" alt="Early pioneering motorcycle">
+    <img src="assets/eras/matchless-on-road.jpg" alt="Classic Matchless motorcycle being ridden">
+    <img src="assets/gallery/norton-classic.jpg" alt="Classic Norton motorcycle">
+    <img src="assets/eras/custom-scooter.jpg" alt="Custom classic scooter">
+    <img src="assets/gallery/triumph-tiger.jpg" alt="Yellow Triumph Tiger">
+  </div>
+</section>
+
 
 <section class="section">
   <div class="wrap">
@@ -161,8 +221,13 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     <h3 data-edit>Rides & Events</h3>
     <div class="columns">
       <div>
-        <div class="event"><strong data-edit>Wednesday Rides</strong><span data-edit>Weekly, weather permitting. Details are circulated through the Wednesday Riders group.</span></div>
-        <div class="event"><strong data-edit>Old Bikes Run</strong><span data-edit>First Sunday each month. A short, easy run aimed at getting the older bikes out and about, usually with a public stop before returning to the Clubrooms.</span></div>
+        <div class="event">
+          <strong data-edit>Wednesday Rides</strong>
+          <span data-edit>Weekly social rides, weather permitting. Route, meeting point and current ride arrangements are shared through the dedicated TCMCC Wed Rides WhatsApp group.</span>
+          <span style="margin-top:12px"><a class="button" href="https://chat.whatsapp.com/KW26UuePhnB6sNaue7dS4B?mode=gi_t" target="_blank" rel="noopener">JOIN WEDNESDAY RIDES WHATSAPP</a></span>
+          <span style="margin-top:8px;font-size:.9rem">Group membership is by approval.</span>
+        </div>
+        <div class="event"><strong data-edit>Old Bikes Run</strong><span data-edit>First Sunday each month. A separate monthly club ride aimed at getting the older bikes out and about. Ride details are published by the Club.</span></div>
         <div class="event"><strong data-edit>Club Night</strong><span data-edit>First Tuesday of each month at 7.30 pm.</span></div>
       </div>
       <figure style="margin:0">
@@ -194,13 +259,42 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
   </div>
 </section>
 
+<section id="photos" class="section">
+  <div class="wrap">
+    <div class="kicker">Club life</div>
+    <h3>Photos</h3>
+    <p>Motorcycles, club runs and some of the roads that make getting there half the fun.</p>
+<div class="gallery-group"><h4>On the Road</h4><div class="photo-grid">
+<a href="assets/gallery/wed-ride-bikes.jpg" target="_blank" rel="noopener"><img src="assets/gallery/wed-ride-bikes.jpg" alt="On the Road" loading="lazy"></a>
+<a href="assets/gallery/coastal-church-stop.jpg" target="_blank" rel="noopener"><img src="assets/gallery/coastal-church-stop.jpg" alt="On the Road" loading="lazy"></a>
+<a href="assets/gallery/coastal-riders.jpg" target="_blank" rel="noopener"><img src="assets/gallery/coastal-riders.jpg" alt="On the Road" loading="lazy"></a>
+<a href="assets/gallery/mountain-ride.jpg" target="_blank" rel="noopener"><img src="assets/gallery/mountain-ride.jpg" alt="On the Road" loading="lazy"></a>
+<a href="assets/gallery/coastal-road-riders.jpg" target="_blank" rel="noopener"><img src="assets/gallery/coastal-road-riders.jpg" alt="On the Road" loading="lazy"></a>
+</div></div>
+<div class="gallery-group"><h4>Old Bikes & Club Runs</h4><div class="photo-grid">
+<a href="assets/gallery/club-run-lineup.jpg" target="_blank" rel="noopener"><img src="assets/gallery/club-run-lineup.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+<a href="assets/gallery/ride-start-lineup.jpg" target="_blank" rel="noopener"><img src="assets/gallery/ride-start-lineup.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+<a href="assets/gallery/classic-bike-lineup.jpg" target="_blank" rel="noopener"><img src="assets/gallery/classic-bike-lineup.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+<a href="assets/gallery/club-gathering-bikes.jpg" target="_blank" rel="noopener"><img src="assets/gallery/club-gathering-bikes.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+<a href="assets/gallery/garage-visit.jpg" target="_blank" rel="noopener"><img src="assets/gallery/garage-visit.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+<a href="assets/gallery/club-social-stop.jpg" target="_blank" rel="noopener"><img src="assets/gallery/club-social-stop.jpg" alt="Old Bikes & Club Runs" loading="lazy"></a>
+</div></div>
+<div class="gallery-group"><h4>Classic Motorcycles</h4><div class="photo-grid">
+<a href="assets/gallery/vincent-classic.jpg" target="_blank" rel="noopener"><img src="assets/gallery/vincent-classic.jpg" alt="Classic Motorcycles" loading="lazy"></a>
+<a href="assets/gallery/matchless-g3ls.jpg" target="_blank" rel="noopener"><img src="assets/gallery/matchless-g3ls.jpg" alt="Classic Motorcycles" loading="lazy"></a>
+<a href="assets/gallery/norton-classic.jpg" target="_blank" rel="noopener"><img src="assets/gallery/norton-classic.jpg" alt="Classic Motorcycles" loading="lazy"></a>
+<a href="assets/gallery/triumph-tiger.jpg" target="_blank" rel="noopener"><img src="assets/gallery/triumph-tiger.jpg" alt="Classic Motorcycles" loading="lazy"></a>
+</div></div>
+</div></section>
+
 <section id="newsletters" class="section">
   <div class="wrap">
     <div class="kicker">Club news</div>
     <h3 data-edit>Newsletters</h3>
     <div class="panel">
-      <p data-edit><strong>September 2026</strong> — Club News</p>
-      <p data-edit>This area can hold each newsletter as a PDF link as they are published, creating a permanent club archive.</p>
+      <p><strong>September 2026 — Issue 1</strong></p>
+      <p>The return of TCMCC Club News, with club updates, classic motorcycle stories, rides, member news and details of the 50th Anniversary celebration.</p>
+      <p><a class="button" href="newsletters/TCMCC%20Sep%2026%20News.pdf" target="_blank" rel="noopener">READ SEPTEMBER NEWSLETTER</a></p>
     </div>
   </div>
 </section>
