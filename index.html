@@ -121,6 +121,7 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     }
 
 </style>
+<link rel="stylesheet" href="tcmcc-mobile.css">
 </head>
 <body>
 <header>
@@ -354,5 +355,6 @@ if(saved){
   try{JSON.parse(saved).forEach((v,i)=>{if(editables[i])editables[i].innerHTML=v})}catch(e){}
 }
 </script>
+<script src="tcmcc-mobile.js"></script>
 </body>
 </html>
