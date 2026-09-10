@@ -96,9 +96,12 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     }
     .classic-era-grid img{
       width:100%;
-      aspect-ratio:4/3;
+      height:230px;
       object-fit:cover;
       display:block;
+    }
+    .classic-era-grid img:nth-child(4){
+      object-position:center 42%;
     }
     @media(max-width:800px){
       .classic-era-grid{
@@ -109,6 +112,8 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
       .classic-era-grid img{
         flex:0 0 72vw;
         width:72vw;
+        height:auto;
+        aspect-ratio:4/3;
         scroll-snap-align:start;
       }
     }
