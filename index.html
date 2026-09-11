@@ -58,18 +58,19 @@ h3{font-size:clamp(2rem,4vw,3rem);color:var(--navy);margin:.35rem 0 1rem}
 .archive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
 .archive-item{padding:26px;border:1px solid rgba(255,255,255,.2);border-radius:10px}
 .archive-item h4{margin:0 0 8px;font-size:1.35rem;color:#fff}
-.rally-feature{margin-top:28px;border:1px solid rgba(255,255,255,.24);border-radius:12px;overflow:hidden;background:rgba(255,255,255,.06);display:grid;grid-template-columns:minmax(340px,.95fr) minmax(0,1.25fr)}
-.rally-photo{margin:0;background:#0d1f30;display:flex;flex-direction:column}
-.rally-photo img{width:100%;height:100%;min-height:430px;object-fit:cover;display:block}
-.rally-photo figcaption{padding:12px 16px 15px;color:#d8e0e6;font-size:.84rem;line-height:1.45;background:rgba(0,0,0,.18)}
-.rally-copy{padding:34px 36px 32px}
+.rally-feature{margin-top:28px;border:1px solid rgba(255,255,255,.24);border-radius:12px;overflow:hidden;background:rgba(255,255,255,.06)}
+.rally-photo{margin:0;background:#0d1f30}
+.rally-photo img{width:100%;height:auto;display:block;object-fit:contain}
+.rally-photo figcaption{padding:11px 18px 13px;color:#d8e0e6;font-size:.84rem;line-height:1.45;background:rgba(0,0,0,.18)}
+.rally-copy{padding:30px 36px 32px}
 .rally-copy .mini{color:var(--gold);font-weight:800;text-transform:uppercase;font-size:.86rem;letter-spacing:.06em}
 .rally-copy h4{margin:6px 0 4px;color:#fff;font-size:2rem;line-height:1.08}
-.rally-copy .rally-sub{margin:0 0 20px;color:#e3bf65;font-weight:700;font-size:1.02rem}
-.rally-copy p{margin:0 0 15px;color:#f5f7f8}
-.rally-copy .rally-close{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.22);font-weight:700;color:#fff}
-.rally-copy .archive-note{font-size:.9rem;color:#d6dce1;margin-bottom:0}
-@media(max-width:850px){.rally-feature{grid-template-columns:1fr}.rally-photo img{min-height:0;height:auto}.rally-copy{padding:28px 24px}}
+.rally-copy .rally-sub{margin:0 0 22px;color:#e3bf65;font-weight:700;font-size:1.02rem}
+.rally-story{columns:2;column-gap:42px;column-rule:1px solid rgba(255,255,255,.12)}
+.rally-story p{break-inside:avoid;margin:0 0 15px;color:#f5f7f8}
+.rally-copy .rally-close{margin:20px 0 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.22);font-weight:700;color:#fff}
+.rally-copy .archive-note{font-size:.9rem;color:#d6dce1;margin:12px 0 0}
+@media(max-width:850px){.rally-copy{padding:26px 24px}.rally-story{columns:1;column-rule:0}}
 footer{background:var(--navy2);color:#d6dce1;padding:42px 0}
 footer strong{color:#fff}
 footer a{color:var(--gold)}
@@ -341,6 +342,7 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
         <div class="mini">From the archives</div>
         <h4 data-edit>The Rallies</h4>
         <p class="rally-sub" data-edit>Where the bikes brought everyone together</p>
+        <div class="rally-story">
         <p data-edit>For much of the Club's history, the Annual Rally was the big weekend of the year. Riders came from motorcycle clubs around New Zealand, sometimes travelling considerable distances to Tauranga for a weekend of old bikes, riding, competition and friendship. That tradition survived for decades, continuing through until 2024.</p>
         <p data-edit>Friday was arrival day and often one of the best parts of the weekend. Bikes rolled in, old friends met again and stories from previous rallies were revived over suitable refreshments. Occasionally the enthusiasm of Friday evening could be detected in a few faces around the breakfast table on Saturday morning.</p>
         <p data-edit>In the early years particularly, running a rally was very much a hands-on club affair. Keeping the weekend affordable meant doing the work yourselves. Members peeled potatoes, cooked breakfasts, prepared meals, cleaned up and tackled the dozens of little jobs needed to keep a camp full of visiting motorcyclists fed and functioning.</p>
@@ -348,6 +350,7 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
         <p data-edit>Then everyone geared up for the rally ride. A route had been worked out beforehand, although successfully following it was sometimes part of the challenge. Getting lost occasionally came with the territory. Bringing up the rear was the essential backup trailer, equipped with basic tools, spare petrol and tie-downs to collect any elderly machine that decided it had travelled quite far enough for one day.</p>
         <p data-edit>By Saturday evening everyone was back together for the meal and prizegiving, accompanied by more stories from the day's adventures — and perhaps another suitable refreshment or two.</p>
         <p data-edit>Sunday meant farewells for the visitors and clean-up for the Tauranga members. Then the bikes headed off in different directions until the next rally brought everyone together again.</p>
+                </div>
         <p class="rally-close" data-edit>The motorcycles may have been the reason for holding a rally, but the friendships were what made people keep coming back.</p>
         <p class="archive-note">More rally stories, photographs and newsletter extracts can be added here as the Club archive is worked through.</p>
       </div>
