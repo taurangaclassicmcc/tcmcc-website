@@ -58,19 +58,6 @@ h3{font-size:clamp(2rem,4vw,3rem);color:var(--navy);margin:.35rem 0 1rem}
 .archive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
 .archive-item{padding:26px;border:1px solid rgba(255,255,255,.2);border-radius:10px}
 .archive-item h4{margin:0 0 8px;font-size:1.35rem;color:#fff}
-.rally-feature{margin-top:28px;border:1px solid rgba(255,255,255,.24);border-radius:12px;overflow:hidden;background:rgba(255,255,255,.06)}
-.rally-photo{margin:0;background:#0d1f30}
-.rally-photo img{width:100%;height:auto;display:block;object-fit:contain}
-.rally-photo figcaption{padding:11px 18px 13px;color:#d8e0e6;font-size:.84rem;line-height:1.45;background:rgba(0,0,0,.18)}
-.rally-copy{padding:30px 36px 32px}
-.rally-copy .mini{color:var(--gold);font-weight:800;text-transform:uppercase;font-size:.86rem;letter-spacing:.06em}
-.rally-copy h4{margin:6px 0 4px;color:#fff;font-size:2rem;line-height:1.08}
-.rally-copy .rally-sub{margin:0 0 22px;color:#e3bf65;font-weight:700;font-size:1.02rem}
-.rally-story{columns:2;column-gap:42px;column-rule:1px solid rgba(255,255,255,.12)}
-.rally-story p{break-inside:avoid;margin:0 0 15px;color:#f5f7f8}
-.rally-copy .rally-close{margin:20px 0 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.22);font-weight:700;color:#fff}
-.rally-copy .archive-note{font-size:.9rem;color:#d6dce1;margin:12px 0 0}
-@media(max-width:850px){.rally-copy{padding:26px 24px}.rally-story{columns:1;column-rule:0}}
 footer{background:var(--navy2);color:#d6dce1;padding:42px 0}
 footer strong{color:#fff}
 footer a{color:var(--gold)}
@@ -80,6 +67,20 @@ footer a{color:var(--gold)}
 .editbar button.primary{background:var(--gold)}
 body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
 .photo-placeholder{height:260px;border-radius:10px;background:linear-gradient(135deg,#9ba58d,#576858);display:grid;place-items:center;color:white;font-weight:800;text-align:center;padding:20px}
+
+.anniversary-feature{display:grid;grid-template-columns:minmax(280px,.78fr) minmax(0,1.22fr);gap:46px;align-items:start}
+.anniversary-poster{background:#fff;border-radius:10px;padding:10px;box-shadow:0 10px 28px rgba(0,0,0,.24)}
+.anniversary-poster img{display:block;width:100%;height:auto;border-radius:5px}
+.anniversary-poster-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.anniversary-copy .lead{max-width:none}
+.anniversary-copy p{font-size:1.06rem}
+.anniversary-highlight{margin-top:24px;padding:20px 22px;border:1px solid rgba(206,161,54,.55);border-radius:10px;background:rgba(255,255,255,.07)}
+.anniversary-highlight strong{color:var(--gold)}
+@media(max-width:850px){
+  .anniversary-feature{grid-template-columns:1fr}
+  .anniversary-poster{max-width:620px;margin:0 auto}
+}
+
 @media (max-width:850px){
   .cards,.archive-grid,.columns{grid-template-columns:1fr}
   .brand img{width:86px;height:86px}
@@ -275,18 +276,27 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
 </section>
 
 <section id="anniversary-detail" class="section band">
-  <div class="wrap columns">
+  <div class="wrap anniversary-feature">
     <div>
+      <div class="anniversary-poster">
+        <a href="documents/TCMCC-50-Years-Poster.pdf" target="_blank" rel="noopener" aria-label="Open the TCMCC 50 Years celebration poster">
+          <img src="assets/tcmcc-50-years-poster.jpg" alt="Tauranga Classic Motorcycle Club 50 Years celebration poster for Labour Weekend 24 to 26 October 2026 at Classic Flyers Museum Tauranga">
+        </a>
+      </div>
+      <div class="anniversary-poster-links">
+        <a class="button" href="documents/TCMCC-50-Years-Poster.pdf" target="_blank" rel="noopener">VIEW FULL POSTER</a>
+      </div>
+    </div>
+    <div class="anniversary-copy">
       <div class="kicker">Labour Weekend 2026</div>
       <h3 data-edit>Celebrating 50 Years — 1976 to 2026</h3>
-      <p class="lead" data-edit>Our 50th celebration brings classic motorcycles and classic aviation together at Classic Flyers Museum, Tauranga.</p>
-      <p data-edit>Over the weekend we will display a wide range of motorcycles gathered by members and friends of the Club. There will be start-up sessions, visiting clubs and a Sunday celebration luncheon.</p>
-    </div>
-    <div class="panel">
-      <h4 data-edit style="margin-top:0;color:var(--navy);font-size:1.5rem">50th Anniversary</h4>
-      <p data-edit><strong>24–26 October 2026</strong><br>Classic Flyers Museum<br>Tauranga</p>
-      <p data-edit><strong>Friday & Saturday</strong><br>Motorcycle display<br>Start-up sessions<br>Visiting clubs and enthusiasts</p>
-      <p data-edit><strong>Sunday</strong><br>50th Anniversary celebration luncheon</p>
+      <p class="lead" data-edit>The club will celebrate 50 years with a special event at the Tauranga Classic Flyers Museum from <strong>24th to 26th October, Labour Weekend 2026</strong>.</p>
+      <p data-edit>Across the weekend there will be a public display of motorcycles covering a wide range of classics from across the generations — a chance to enjoy the bikes, the history and the stories behind them.</p>
+      <p data-edit>A special celebration luncheon will be held on the Sunday as part of the anniversary weekend.</p>
+      <div class="anniversary-highlight">
+        <p data-edit style="margin:0"><strong>24–26 October 2026</strong><br>Classic Flyers Museum, Tauranga<br>Public classic motorcycle display • Sunday celebration luncheon</p>
+      </div>
+      <p data-edit style="margin-top:24px;font-size:1.15rem"><strong>Details are in the poster — and we'd love you to join us.</strong></p>
     </div>
   </div>
 </section>
@@ -328,33 +338,10 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     <div class="kicker">From the archives</div>
     <h3 data-edit>50 years of motorcycles, people and stories</h3>
     <div class="archive-grid">
-      <a class="archive-item" href="archive-1976.html" style="color:inherit;text-decoration:none"><h4 data-edit>Letters from the Past</h4><p data-edit>Selected extracts and scans from the Club's earliest newsletters.</p><p><strong>EXPLORE THE EARLY YEARS →</strong></p></a>
-      <a class="archive-item" href="archive-1976.html" style="color:inherit;text-decoration:none"><h4 data-edit>1976 — Where it began</h4><p data-edit>The first meeting, first run, founding members and the motorcycles that brought them together.</p><p><strong>READ THE STORY →</strong></p></a>
+      <div class="archive-item"><h4 data-edit>Letters from the Past</h4><p data-edit>Selected extracts and scans from the Club's earliest newsletters.</p></div>
+      <div class="archive-item"><h4 data-edit>1976 — Where it began</h4><p data-edit>Stories, photographs and names from the first years of TCMCC.</p></div>
       <div class="archive-item"><h4 data-edit>Motorcycle Stories</h4><p data-edit>Members' machines, unusual histories and stories from another era.</p></div>
     </div>
-
-    <article class="rally-feature" id="rallies">
-      <figure class="rally-photo">
-        <img src="assets/archive/tcmcc-rally-helpers.png" alt="Tauranga Classic Motorcycle Club members and helpers gathered during a club rally" loading="lazy">
-        <figcaption>Some of the Tauranga members who helped make the rallies happen: Graeme Holmes, Lloyd Baker, Fred Gunst, Richard Patching, Ray Nitschke, Barry Alderdice, Keith Baker, Jack Morris, Len Parry, Warren Higgins, Marie Patching and Margaret Baker.</figcaption>
-      </figure>
-      <div class="rally-copy">
-        <div class="mini">From the archives</div>
-        <h4 data-edit>The Rallies</h4>
-        <p class="rally-sub" data-edit>Where the bikes brought everyone together</p>
-        <div class="rally-story">
-        <p data-edit>For much of the Club's history, the Annual Rally was the big weekend of the year. Riders came from motorcycle clubs around New Zealand, sometimes travelling considerable distances to Tauranga for a weekend of old bikes, riding, competition and friendship. That tradition survived for decades, continuing through until 2024.</p>
-        <p data-edit>Friday was arrival day and often one of the best parts of the weekend. Bikes rolled in, old friends met again and stories from previous rallies were revived over suitable refreshments. Occasionally the enthusiasm of Friday evening could be detected in a few faces around the breakfast table on Saturday morning.</p>
-        <p data-edit>In the early years particularly, running a rally was very much a hands-on club affair. Keeping the weekend affordable meant doing the work yourselves. Members peeled potatoes, cooked breakfasts, prepared meals, cleaned up and tackled the dozens of little jobs needed to keep a camp full of visiting motorcyclists fed and functioning.</p>
-        <p data-edit>Saturday morning brought the <strong>bike show</strong>. Machines were lined up in orderly rows, often grouped by decade, for members and visitors to admire and judge. Awards covered the various eras along with honours such as <strong>Pick of the Show</strong> and <strong>Best Restoration</strong>.</p>
-        <p data-edit>Then everyone geared up for the rally ride. A route had been worked out beforehand, although successfully following it was sometimes part of the challenge. Getting lost occasionally came with the territory. Bringing up the rear was the essential backup trailer, equipped with basic tools, spare petrol and tie-downs to collect any elderly machine that decided it had travelled quite far enough for one day.</p>
-        <p data-edit>By Saturday evening everyone was back together for the meal and prizegiving, accompanied by more stories from the day's adventures — and perhaps another suitable refreshment or two.</p>
-        <p data-edit>Sunday meant farewells for the visitors and clean-up for the Tauranga members. Then the bikes headed off in different directions until the next rally brought everyone together again.</p>
-                </div>
-        <p class="rally-close" data-edit>The motorcycles may have been the reason for holding a rally, but the friendships were what made people keep coming back.</p>
-        <p class="archive-note">More rally stories, photographs and newsletter extracts can be added here as the Club archive is worked through.</p>
-      </div>
-    </article>
   </div>
 </section>
 
