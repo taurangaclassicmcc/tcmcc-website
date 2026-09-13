@@ -239,6 +239,50 @@ footer a{color:var(--gold)}
 .regular-activities{margin-top:34px}
 @media(max-width:650px){.calendar-event{grid-template-columns:1fr;gap:6px}.calendar-date{font-size:.92rem}}
 
+
+/* v7 targeted refinements */
+.committee-help{
+  padding:24px 26px;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:12px;
+  background:rgba(255,255,255,.06);
+}
+.committee-help h4{margin:0 0 10px;color:#fff;font-size:1.35rem}
+.committee-help p{color:#fff;margin:.55rem 0}
+.committee-help .button{margin-top:6px}
+
+.member-stories-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  margin-top:24px;
+}
+.member-story-card{
+  display:grid;
+  grid-template-columns:minmax(220px,42%) 1fr;
+  overflow:hidden;
+  border:1px solid #ddd;
+  border-radius:12px;
+  background:#fff;
+}
+.member-story-card img{
+  width:100%;
+  height:100%;
+  min-height:260px;
+  object-fit:cover;
+  display:block;
+}
+.member-story-copy{padding:24px}
+.member-story-copy h4{margin:4px 0 10px;color:var(--navy);font-size:1.35rem}
+.member-story-copy p{margin:.55rem 0}
+@media(max-width:850px){
+  .member-stories-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .member-story-card{grid-template-columns:1fr}
+  .member-story-card img{min-height:220px}
+}
+
 </style>
 <link rel="stylesheet" href="tcmcc-mobile.css">
 </head>
@@ -333,7 +377,7 @@ footer a{color:var(--gold)}
         <h4>Come for a ride</h4>
         <p>Wednesday rides, weather permitting. Old Bikes Run on the first Sunday of each month.</p>
         <p>Club Night: first Tuesday of the month at 7.30 pm.</p>
-        <a href="#rides">RIDE INFORMATION →</a>
+        <a href="#regular-activities">RIDE INFORMATION →</a>
       </article>
       <article class="card">
         <div class="mini">New members welcome</div>
@@ -390,7 +434,7 @@ footer a{color:var(--gold)}
     </div>
     <div id="calendar-list" class="calendar-list" aria-live="polite"></div>
 
-    <div class="regular-activities">
+    <div class="regular-activities" id="regular-activities">
       <div class="kicker">Regular club activities</div>
       <div class="columns">
         <div>
@@ -446,11 +490,10 @@ footer a{color:var(--gold)}
     <h3>Fifty years of motorcycling and friendship</h3>
     <p class="lead">The Tauranga Classic Motorcycle Club was established in 1976 by enthusiasts brought together by their interest in older motorcycles. Fifty years later the motorcycles remain important — but so do the friendships, knowledge and camaraderie that have grown around them.</p>
     <p>Our members own and ride motorcycles spanning many decades and many marques. Some are beautifully restored, some remarkably original and others are simply old motorcycles still doing what they were built to do — being ridden.</p>
-  </div>
 
     <div class="panel" style="margin-top:32px">
       <div class="kicker">Keep in touch</div>
-      <h4 style="margin-top:8px">Find TCMCC on Facebook</h4>
+      <h4 style="margin:8px 0 10px;color:var(--navy);font-size:1.45rem">Find TCMCC on Facebook</h4>
       <p>Facebook helps TCMCC stay connected with fellow classic motorcycle enthusiasts — both within the Club and further afield. It is a place to share rides, motorcycles, photographs, stories and upcoming activities, and it also gives people interested in classic motorcycles an opportunity to discover the Club.</p>
       <p>Our <strong>Facebook Page</strong> provides a public introduction to TCMCC, while our <strong>Facebook Group</strong> is the more active community where members and other enthusiasts can keep in touch and join the conversation.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
@@ -458,6 +501,35 @@ footer a{color:var(--gold)}
         <a class="button" href="https://www.facebook.com/groups/921949925548002" target="_blank" rel="noopener">VISIT OUR FACEBOOK GROUP</a>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="member-stories" class="section band">
+  <div class="wrap">
+    <div class="kicker">Coming up</div>
+    <h3>Members, motorcycles and their stories</h3>
+    <p class="lead">Two member motorcycle stories we will be adding to the site.</p>
+
+    <div class="member-stories-grid">
+      <article class="member-story-card">
+        <img src="assets/gavin-bmw-r80rt-1985.jpeg" alt="Gavin's 1985 BMW R80RT with Pat aboard" loading="lazy">
+        <div class="member-story-copy">
+          <div class="kicker">1985 BMW R80RT</div>
+          <h4>Gavin's BMW — with Pat aboard</h4>
+          <p>A classic BMW tourer with a club story behind it. We will feature Gavin's 1985 R80RT and the photograph of Pat aboard.</p>
+        </div>
+      </article>
+
+      <article class="member-story-card">
+        <img src="assets/brian-matchless-g80s-1955.jpeg" alt="Brian's 1955 Matchless G80S" loading="lazy">
+        <div class="member-story-copy">
+          <div class="kicker">1955 Matchless G80S</div>
+          <h4>Brian's first bike — and still his bike</h4>
+          <p>Brian got his Matchless G80S when he was just 14 years old. More than a first motorcycle, it is a remarkable piece of personal club history because he still owns it today.</p>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
 
 <section id="archives" class="section band">
@@ -535,14 +607,14 @@ footer a{color:var(--gold)}
         <p><strong>Club Captain:</strong> Alan Sullivan</p>
         <p><strong>Committee:</strong> Geoff Morgan, Brian Mackie, Allan Roberts, Heinz Diener, Roger Gardner and Brian Yates.</p>
       </div>
-      <div class="panel" style="padding:28px 30px">
-        <h4 style="margin:0 0 12px;color:var(--navy);font-size:1.35rem">Need a hand?</h4>
-        <p style="margin-top:0">Your committee can assist with club enquiries, rides, events and membership.</p>
-        <p>Send us a message by email, or if you are already part of the Wednesday Rides WhatsApp group, use the group to get in touch.</p>
-        <p style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:0">
+      <div class="committee-help">
+        <h4>Need a hand?</h4>
+        <p>Your committee can assist with club enquiries, rides, events and membership.</p>
+        <p>Send us an email, or if you are already part of the Wednesday Rides WhatsApp group, use the group to get in touch.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
           <a class="button" href="mailto:taurangaclassicmcc@gmail.com">EMAIL THE CLUB</a>
           <a class="button" href="https://chat.whatsapp.com/KW26UuePhnB6sNaue7dS4B?mode=gi_t" target="_blank" rel="noopener">WHATSAPP GROUP</a>
-        </p>
+        </div>
       </div>
     </div>
   </div>
