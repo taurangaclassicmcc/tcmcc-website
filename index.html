@@ -62,10 +62,6 @@ footer{background:var(--navy2);color:#d6dce1;padding:42px 0}
 footer strong{color:#fff}
 footer a{color:var(--gold)}
 .notice{font-size:.88rem;color:var(--muted);margin-top:24px}
-.editbar{position:fixed;right:18px;bottom:18px;z-index:99;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.editbar button{border:0;border-radius:7px;padding:10px 13px;font-weight:700;cursor:pointer;background:#fff;color:var(--navy);box-shadow:0 3px 14px rgba(0,0,0,.2)}
-.editbar button.primary{background:var(--gold)}
-body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
 .photo-placeholder{height:260px;border-radius:10px;background:linear-gradient(135deg,#9ba58d,#576858);display:grid;place-items:center;color:white;font-weight:800;text-align:center;padding:20px}
 @media (max-width:850px){
   .cards,.archive-grid,.columns{grid-template-columns:1fr}
@@ -408,39 +404,9 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     <p data-edit>Email: <a href="mailto:taurangaclassicmcc@gmail.com">taurangaclassicmcc@gmail.com</a><br>
     Facebook: Tauranga Classic Motorcycle Club</p>
     <p data-edit>Established 1976 • Tauranga, New Zealand</p>
-    <p class="notice">Prototype site. The floating Edit button is for experimenting locally and can be removed before publishing.</p>
   </div>
 </footer>
 
-<div class="editbar">
-  <button class="primary" id="editBtn">Edit page</button>
-  <button id="saveBtn" style="display:none">Save changes</button>
-  <button id="resetBtn" style="display:none">Reset</button>
-</div>
-
-<script>
-const editables=[...document.querySelectorAll('[data-edit]')];
-const key='tcmcc-demo-content-v1';
-function setEditing(on){
-  document.body.classList.toggle('editing',on);
-  editables.forEach(el=>el.contentEditable=on?'true':'false');
-  document.getElementById('editBtn').textContent=on?'Finish editing':'Edit page';
-  document.getElementById('saveBtn').style.display=on?'inline-block':'none';
-  document.getElementById('resetBtn').style.display=on?'inline-block':'none';
-}
-document.getElementById('editBtn').onclick=()=>setEditing(!document.body.classList.contains('editing'));
-document.getElementById('saveBtn').onclick=()=>{
-  localStorage.setItem(key,JSON.stringify(editables.map(el=>el.innerHTML)));
-  alert('Changes saved in this browser.');
-};
-document.getElementById('resetBtn').onclick=()=>{
-  if(confirm('Reset the demo to its original wording?')){localStorage.removeItem(key);location.reload();}
-};
-const saved=localStorage.getItem(key);
-if(saved){
-  try{JSON.parse(saved).forEach((v,i)=>{if(editables[i])editables[i].innerHTML=v})}catch(e){}
-}
-</script>
 <script src="tcmcc-mobile.js"></script>
 </body>
 </html>
