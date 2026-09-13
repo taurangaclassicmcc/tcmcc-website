@@ -63,6 +63,20 @@ footer strong{color:#fff}
 footer a{color:var(--gold)}
 .notice{font-size:.88rem;color:var(--muted);margin-top:24px}
 .photo-placeholder{height:260px;border-radius:10px;background:linear-gradient(135deg,#9ba58d,#576858);display:grid;place-items:center;color:white;font-weight:800;text-align:center;padding:20px}
+
+
+.anniversary-feature{display:grid;grid-template-columns:minmax(280px,.78fr) minmax(0,1.22fr);gap:46px;align-items:start}
+.anniversary-poster{background:#fff;border-radius:10px;padding:10px;box-shadow:0 10px 28px rgba(0,0,0,.24)}
+.anniversary-poster img{display:block;width:100%;height:auto;border-radius:5px}
+.anniversary-poster-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.anniversary-copy .lead{max-width:none}
+.anniversary-copy p{font-size:1.06rem}
+.anniversary-highlight{margin-top:24px;padding:20px 22px;border:1px solid rgba(206,161,54,.55);border-radius:10px;background:rgba(255,255,255,.07)}
+.anniversary-highlight strong{color:var(--gold)}
+@media(max-width:850px){
+  .anniversary-feature{grid-template-columns:1fr}
+  .anniversary-poster{max-width:620px;margin:0 auto}
+}
 @media (max-width:850px){
   .cards,.archive-grid,.columns{grid-template-columns:1fr}
   .brand img{width:86px;height:86px}
@@ -269,18 +283,27 @@ footer a{color:var(--gold)}
 </section>
 
 <section id="anniversary-detail" class="section band">
-  <div class="wrap columns">
+  <div class="wrap anniversary-feature">
     <div>
+      <div class="anniversary-poster">
+        <a href="documents/TCMCC-50-Years-Poster.pdf" target="_blank" rel="noopener" aria-label="Open the TCMCC 50 Years celebration poster">
+          <img src="assets/tcmcc-50-years-poster.jpg" alt="Tauranga Classic Motorcycle Club 50 Years celebration poster for Labour Weekend 24 to 26 October 2026 at Classic Flyers Museum Tauranga">
+        </a>
+      </div>
+      <div class="anniversary-poster-links">
+        <a class="button" href="documents/TCMCC-50-Years-Poster.pdf" target="_blank" rel="noopener">VIEW FULL POSTER</a>
+      </div>
+    </div>
+    <div class="anniversary-copy">
       <div class="kicker">Labour Weekend 2026</div>
       <h3 data-edit>Celebrating 50 Years — 1976 to 2026</h3>
-      <p class="lead" data-edit>Our 50th celebration brings classic motorcycles and classic aviation together at Classic Flyers Museum, Tauranga.</p>
-      <p data-edit>Over the weekend we will display a wide range of motorcycles gathered by members and friends of the Club. There will be start-up sessions, visiting clubs and a Sunday celebration luncheon.</p>
-    </div>
-    <div class="panel">
-      <h4 data-edit style="margin-top:0;color:var(--navy);font-size:1.5rem">50th Anniversary</h4>
-      <p data-edit><strong>24–26 October 2026</strong><br>Classic Flyers Museum<br>Tauranga</p>
-      <p data-edit><strong>Friday & Saturday</strong><br>Motorcycle display<br>Start-up sessions<br>Visiting clubs and enthusiasts</p>
-      <p data-edit><strong>Sunday</strong><br>50th Anniversary celebration luncheon</p>
+      <p class="lead" data-edit>The club will celebrate 50 years with a special event at the Tauranga Classic Flyers Museum from <strong>24th to 26th October, Labour Weekend 2026</strong>.</p>
+      <p data-edit>Across the weekend there will be a public display of motorcycles covering a wide range of classics from across the generations — a chance to enjoy the bikes, the history and the stories behind them.</p>
+      <p data-edit>A special celebration luncheon will be held on the Sunday as part of the anniversary weekend.</p>
+      <div class="anniversary-highlight">
+        <p data-edit style="margin:0"><strong>24–26 October 2026</strong><br>Classic Flyers Museum, Tauranga<br>Public classic motorcycle display • Sunday celebration luncheon</p>
+      </div>
+      <p data-edit style="margin-top:24px;font-size:1.15rem"><strong>Details are in the poster — and we'd love you to join us.</strong></p>
     </div>
   </div>
 </section>
@@ -327,6 +350,19 @@ footer a{color:var(--gold)}
     <h3 data-edit>Fifty years of motorcycling and friendship</h3>
     <p class="lead" data-edit>The Tauranga Classic Motorcycle Club was established in 1976 by enthusiasts brought together by their interest in older motorcycles. Fifty years later the motorcycles remain important — but so do the friendships, knowledge and camaraderie that have grown around them.</p>
     <p data-edit>Our members own and ride motorcycles spanning many decades and many marques. Some are beautifully restored, some remarkably original and others are simply old motorcycles still doing what they were built to do — being ridden.</p>
+  </div>
+
+  <div class="wrap">
+    <div class="panel" style="margin-top:32px">
+      <div class="kicker">Keep in touch</div>
+      <h4 style="margin-top:8px">Find TCMCC on Facebook</h4>
+      <p>Facebook helps TCMCC stay connected with fellow classic motorcycle enthusiasts — both within the Club and further afield. It is a place to share rides, motorcycles, photographs, stories and upcoming activities, and it also gives people interested in classic motorcycles an opportunity to discover the Club.</p>
+      <p>Our <strong>Facebook Page</strong> provides a public introduction to TCMCC, while our <strong>Facebook Group</strong> is the more active community where members and other enthusiasts can keep in touch and join the conversation.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
+        <a class="button" href="https://www.facebook.com/TaurangaClassic" target="_blank" rel="noopener">VISIT OUR FACEBOOK PAGE</a>
+        <a class="button" href="https://www.facebook.com/groups/921949925548002" target="_blank" rel="noopener">VISIT OUR FACEBOOK GROUP</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -402,7 +438,7 @@ footer a{color:var(--gold)}
   <div class="wrap">
     <p><strong data-edit>TAURANGA CLASSIC MOTORCYCLE CLUB</strong></p>
     <p data-edit>Email: <a href="mailto:taurangaclassicmcc@gmail.com">taurangaclassicmcc@gmail.com</a><br>
-    Facebook: Tauranga Classic Motorcycle Club</p>
+    <a href="https://www.facebook.com/TaurangaClassic" target="_blank" rel="noopener">Facebook Page</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/groups/921949925548002" target="_blank" rel="noopener">Facebook Group</a></p>
     <p data-edit>Established 1976 • Tauranga, New Zealand</p>
   </div>
 </footer>
