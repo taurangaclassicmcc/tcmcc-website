@@ -240,7 +240,7 @@ footer a{color:var(--gold)}
 @media(max-width:650px){.calendar-event{grid-template-columns:1fr;gap:6px}.calendar-date{font-size:.92rem}}
 
 
-/* v7 targeted refinements */
+/* v8 targeted refinements */
 .committee-help{
   padding:24px 26px;
   border:1px solid rgba(255,255,255,.22);
@@ -254,33 +254,32 @@ footer a{color:var(--gold)}
 .member-stories-grid{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:24px;
-  margin-top:24px;
+  gap:38px;
+  margin-top:30px;
 }
-.member-story-card{
+.member-story-preview{
   display:grid;
   grid-template-columns:minmax(220px,42%) 1fr;
-  overflow:hidden;
-  border:1px solid #ddd;
-  border-radius:12px;
-  background:#fff;
+  gap:22px;
+  align-items:start;
 }
-.member-story-card img{
+.member-story-preview img{
   width:100%;
-  height:100%;
-  min-height:260px;
+  aspect-ratio:4/3;
   object-fit:cover;
   display:block;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,.22);
 }
-.member-story-copy{padding:24px}
-.member-story-copy h4{margin:4px 0 10px;color:var(--navy);font-size:1.35rem}
-.member-story-copy p{margin:.55rem 0}
+.member-story-copy{padding:2px 0 0}
+.member-story-copy h4{margin:5px 0 10px;color:#fff;font-size:1.35rem}
+.member-story-copy p{margin:.55rem 0;color:#fff}
+.member-story-copy .kicker{margin-top:0}
 @media(max-width:850px){
   .member-stories-grid{grid-template-columns:1fr}
 }
 @media(max-width:600px){
-  .member-story-card{grid-template-columns:1fr}
-  .member-story-card img{min-height:220px}
+  .member-story-preview{grid-template-columns:1fr}
 }
 
 </style>
@@ -506,26 +505,28 @@ footer a{color:var(--gold)}
 
 <section id="member-stories" class="section band">
   <div class="wrap">
-    <div class="kicker">Coming up</div>
-    <h3>Members, motorcycles and their stories</h3>
-    <p class="lead">Two member motorcycle stories we will be adding to the site.</p>
+    <div class="kicker">Coming soon</div>
+    <h3>Motorcycles — and the stories behind them</h3>
+    <p class="lead">We’re gathering the stories behind some of the motorcycles — and the people — that have helped shape the Club. We’ll be adding these stories to the website over the coming months.</p>
 
     <div class="member-stories-grid">
-      <article class="member-story-card">
+      <article class="member-story-preview">
         <img src="assets/gavin-bmw-r80rt-1985.jpeg" alt="Gavin's 1985 BMW R80RT with Pat aboard" loading="lazy">
         <div class="member-story-copy">
           <div class="kicker">1985 BMW R80RT</div>
-          <h4>Gavin's BMW — with Pat aboard</h4>
-          <p>A classic BMW tourer with a club story behind it. We will feature Gavin's 1985 R80RT and the photograph of Pat aboard.</p>
+          <h4>Gavin’s BMW — with Pat aboard</h4>
+          <p>Gavin bought his BMW R80RT new in 1985 and still rides it regularly more than forty years later. Pat has been riding pillion with him throughout.</p>
+          <p><strong>Now that’s love.</strong></p>
         </div>
       </article>
 
-      <article class="member-story-card">
+      <article class="member-story-preview">
         <img src="assets/brian-matchless-g80s-1955.jpeg" alt="Brian's 1955 Matchless G80S" loading="lazy">
         <div class="member-story-copy">
           <div class="kicker">1955 Matchless G80S</div>
-          <h4>Brian's first bike — and still his bike</h4>
-          <p>Brian got his Matchless G80S when he was just 14 years old. More than a first motorcycle, it is a remarkable piece of personal club history because he still owns it today.</p>
+          <h4>Brian’s first bike — and still his bike</h4>
+          <p>Brian bought his Matchless G80S when he was 14 years old, while living at Mount Maunganui. It was his first motorcycle — and remarkably, it still is his motorcycle today.</p>
+          <p>There’s a very good story behind this one, including a certain local traffic policeman. <strong>Coming soon.</strong></p>
         </div>
       </article>
     </div>
