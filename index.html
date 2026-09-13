@@ -330,16 +330,20 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
   <div class="wrap">
     <div class="kicker">Club Committee</div>
     <h3 data-edit>TCMCC Committee</h3>
-    <div class="columns">
+    <div class="columns" style="align-items:start">
       <div>
         <p><strong>President &amp; Secretary:</strong> Bruce Partridge</p>
         <p><strong>Treasurer:</strong> Chris Clarke</p>
-        <p><strong>Committee:</strong> Geoff Morgan, Brian Mackie, Allan Roberts, Heinz Diener, Alan Sullivan, Roger Gardner and Brian Yates.</p>
+        <p><strong>Club Captain:</strong> Alan Sullivan<br><br><strong>Committee:</strong> Geoff Morgan, Brian Mackie, Allan Roberts, Heinz Diener, Roger Gardner and Brian Yates.</p>
       </div>
-      <div class="panel">
-        <p><strong>Club enquiries</strong></p>
-        <p>General enquiries are handled through the club email and directed to the appropriate committee member.</p>
-        <p><a class="button" href="mailto:taurangaclassicmcc@gmail.com">taurangaclassicmcc@gmail.com</a></p>
+      <div class="panel" style="padding:28px 30px">
+        <h4 style="margin:0 0 12px;color:var(--navy);font-size:1.35rem">Need a hand?</h4>
+        <p style="margin-top:0">Your committee is here to help with club enquiries, rides, events and membership.</p>
+        <p>Send us a message by email, or if you are already part of the Wednesday Rides WhatsApp group, use the group to get in touch.</p>
+        <p style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:0">
+          <a class="button" href="mailto:taurangaclassicmcc@gmail.com">EMAIL THE CLUB</a>
+          <a class="button" href="https://chat.whatsapp.com/KW26UuePhnB6sNaue7dS4B?mode=gi_t" target="_blank" rel="noopener">WHATSAPP GROUP</a>
+        </p>
       </div>
     </div>
   </div>
@@ -379,7 +383,7 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
 
 <script>
 const editables=[...document.querySelectorAll('[data-edit]')];
-const key='tcmcc-demo-content-v1';
+const key='tcmcc-demo-content-v2';
 function setEditing(on){
   document.body.classList.toggle('editing',on);
   editables.forEach(el=>el.contentEditable=on?'true':'false');
@@ -397,7 +401,12 @@ document.getElementById('resetBtn').onclick=()=>{
 };
 const saved=localStorage.getItem(key);
 if(saved){
-  try{JSON.parse(saved).forEach((v,i)=>{if(editables[i])editables[i].innerHTML=v})}catch(e){}
+  try{
+    const values=JSON.parse(saved);
+    if(Array.isArray(values) && values.length===editables.length){
+      values.forEach((v,i)=>{if(editables[i])editables[i].innerHTML=v});
+    }
+  }catch(e){}
 }
 </script>
 
