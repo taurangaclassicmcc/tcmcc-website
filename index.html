@@ -427,6 +427,17 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     <p class="lead" data-edit>The Tauranga Classic Motorcycle Club was established in 1976 by enthusiasts brought together by their interest in older motorcycles. Fifty years later the motorcycles remain important — but so do the friendships, knowledge and camaraderie that have grown around them.</p>
     <p data-edit>Our members own and ride motorcycles spanning many decades and many marques. Some are beautifully restored, some remarkably original and others are simply old motorcycles still doing what they were built to do — being ridden.</p>
   </div>
+
+    <div class="panel" style="margin-top:32px">
+      <div class="kicker">Keep in touch</div>
+      <h4 style="margin-top:8px">Find TCMCC on Facebook</h4>
+      <p>Facebook helps TCMCC stay connected with fellow classic motorcycle enthusiasts — both within the Club and further afield. It is a place to share rides, motorcycles, photographs, stories and upcoming activities, and it also gives people interested in classic motorcycles an opportunity to discover the Club.</p>
+      <p>Our <strong>Facebook Page</strong> provides a public introduction to TCMCC, while our <strong>Facebook Group</strong> is the more active community where members and other enthusiasts can keep in touch and join the conversation.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
+        <a class="button" href="https://www.facebook.com/TaurangaClassic" target="_blank" rel="noopener">VISIT OUR FACEBOOK PAGE</a>
+        <a class="button" href="https://www.facebook.com/groups/921949925548002" target="_blank" rel="noopener">VISIT OUR FACEBOOK GROUP</a>
+      </div>
+    </div>
 </section>
 
 <section id="archives" class="section band">
@@ -505,39 +516,10 @@ body.editing [data-edit]{outline:2px dashed var(--gold);outline-offset:3px}
     <p data-edit>Email: <a href="mailto:taurangaclassicmcc@gmail.com">taurangaclassicmcc@gmail.com</a><br>
     <a href="https://www.facebook.com/TaurangaClassic" target="_blank" rel="noopener">Facebook Page</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/groups/921949925548002" target="_blank" rel="noopener">Facebook Group</a></p>
     <p data-edit>Established 1976 • Tauranga, New Zealand</p>
-    <p class="notice">Prototype site. The floating Edit button is for experimenting locally and can be removed before publishing.</p>
-  </div>
+    </div>
 </footer>
 
-<div class="editbar">
-  <button class="primary" id="editBtn">Edit page</button>
-  <button id="saveBtn" style="display:none">Save changes</button>
-  <button id="resetBtn" style="display:none">Reset</button>
-</div>
 
-<script>
-const editables=[...document.querySelectorAll('[data-edit]')];
-const key='tcmcc-demo-content-v1';
-function setEditing(on){
-  document.body.classList.toggle('editing',on);
-  editables.forEach(el=>el.contentEditable=on?'true':'false');
-  document.getElementById('editBtn').textContent=on?'Finish editing':'Edit page';
-  document.getElementById('saveBtn').style.display=on?'inline-block':'none';
-  document.getElementById('resetBtn').style.display=on?'inline-block':'none';
-}
-document.getElementById('editBtn').onclick=()=>setEditing(!document.body.classList.contains('editing'));
-document.getElementById('saveBtn').onclick=()=>{
-  localStorage.setItem(key,JSON.stringify(editables.map(el=>el.innerHTML)));
-  alert('Changes saved in this browser.');
-};
-document.getElementById('resetBtn').onclick=()=>{
-  if(confirm('Reset the demo to its original wording?')){localStorage.removeItem(key);location.reload();}
-};
-const saved=localStorage.getItem(key);
-if(saved){
-  try{JSON.parse(saved).forEach((v,i)=>{if(editables[i])editables[i].innerHTML=v})}catch(e){}
-}
-</script>
 <script src="tcmcc-mobile.js"></script>
 </body>
 </html>
