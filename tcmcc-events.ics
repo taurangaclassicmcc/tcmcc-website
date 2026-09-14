@@ -1,87 +1,108 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//TCMCC//Website Events//EN
+PRODID:-//TCMCC//Club Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:TCMCC Events
+X-WR-TIMEZONE:Pacific/Auckland
 BEGIN:VEVENT
 UID:wcmcc-memorial-ride-2026@tcmcc.org.nz
+DTSTAMP:20260914T033000Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:Whanganui Classic Motorcycle Club Memorial Ride
 LOCATION:BP London Street\, Whanganui
-DESCRIPTION:Memorial Ride. Departing BP London Street at 10:00 am. Organised by: Whanganui Classic Motorcycle Club.
+DESCRIPTION:Memorial Ride. Departing BP London Street at 10:00 am.
+CATEGORIES:Other Club
 END:VEVENT
 BEGIN:VEVENT
 UID:tcmcc-50th-2026@tcmcc.org.nz
+DTSTAMP:20260914T033000Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261027
 SUMMARY:TCMCC 50th Anniversary Celebration
 LOCATION:Classic Flyers Museum\, Tauranga
-DESCRIPTION:Classic motorcycle display\, start-up sessions\, visiting clubs and enthusiasts from Saturday to Monday\, with the 50th Anniversary celebration luncheon as an additional event on Sunday. Organised by: Tauranga Classic Motorcycle Club.
+DESCRIPTION:Three-day celebration of 50 years of the Tauranga Classic Motorcycle Club\, with motorcycle displays\, start-up sessions\, visiting clubs and the Sunday celebration luncheon.
+CATEGORIES:TCMCC
 END:VEVENT
 BEGIN:VEVENT
 UID:nzcmrr-spring-classic-2026@tcmcc.org.nz
+DTSTAMP:20260914T033000Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261102
 SUMMARY:NZCMRR Spring Classic
 LOCATION:Manfeild\, Feilding
-DESCRIPTION:NZ Classic Motorcycle Racing Register Spring Classic. Newsletter information gives 8:00 am for buyers on Saturday 31 October. Organised by: NZ Classic Motorcycle Racing Register.
+DESCRIPTION:NZ Classic Motorcycle Racing Register Spring Classic. Newsletter information gives 8:00 am for buyers on Saturday 31 October.
+CATEGORIES:Other Club
 END:VEVENT
 BEGIN:VEVENT
 UID:bantam-big-day-out-2026@tcmcc.org.nz
+DTSTAMP:20260914T033000Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:Joy McKean Bantam Big Day Out
 LOCATION:Coach House Museum\, Feilding
 DESCRIPTION:Joy McKean Bantam Big Day Out. Meet at 9:30 am.
+CATEGORIES:Other Club
 END:VEVENT
 BEGIN:VEVENT
 UID:wcc-swap-meet-2026@tcmcc.org.nz
+DTSTAMP:20260914T033000Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:WCC Swap Meet
 LOCATION:Karapiro\, Waikato
 DESCRIPTION:WCC Swap Meet at Karapiro.
+CATEGORIES:Other Club
+END:VEVENT
+BEGIN:VEVENT
+UID:gcmcc-east-cape-run-2026@tcmcc.org.nz
+DTSTAMP:20260914T033000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261201
+SUMMARY:Around East Cape Run
+LOCATION:Ōpōtiki - Waihau Bay - Gisborne\, East Cape
+DESCRIPTION:Meet at Ōpōtiki Café between 11:30 am and 12:30 pm on Saturday. Overnight at Waihau Bay\, then on to Gisborne on Sunday and home Monday. Shared accommodation at Waihau Bay Hotel is $90. Outside-club members are welcome. Contact Dal Jackson: 029 778 1326. Accommodation payment to Gisborne Classic Motorcycle Club.
+CATEGORIES:Other Club
 END:VEVENT
 BEGIN:VEVENT
 UID:motormania-swapmeet-2026@tcmcc.org.nz
+DTSTAMP:20260914T033000Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Motormania / Swapmeet
-LOCATION:Waikato
-DESCRIPTION:Motormania / Swapmeet in the Waikato.
+LOCATION:Waikato — venue to confirm
+DESCRIPTION:Motormania / Swapmeet. Exact venue not stated in the newsletter extract.
+CATEGORIES:Other Club
 END:VEVENT
 BEGIN:VEVENT
 UID:tcmcc-christmas-dinner-2026@tcmcc.org.nz
+DTSTAMP:20260914T033000Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:TCMCC Christmas Dinner
 LOCATION:Tauranga Citizens Club
-DESCRIPTION:Club Christmas dinner. Booking confirmed\; menu\, time\, cost and attendance details to follow. Organised by: Tauranga Classic Motorcycle Club.
-END:VEVENT
-BEGIN:VEVENT
-UID:hbcmcc-mail-run-rally-2027@tcmcc.org.nz
-DTSTART;VALUE=DATE:20270320
-DTEND;VALUE=DATE:20270321
-SUMMARY:38th Mail Run Rally
-LOCATION:Kaimanawa Street\, Taupō
-DESCRIPTION:Taupō to Napier commemorative run recalling the historic mail route to Hawke’s Bay. Starts 10:00 am from Kaimanawa Street\, Taupō. Organised by: Hawke’s Bay Classic Motorcycle Club.
+DESCRIPTION:Club Christmas dinner. Booking confirmed\; menu\, time\, cost and attendance details to follow.
+CATEGORIES:TCMCC
 END:VEVENT
 BEGIN:VEVENT
 UID:npcmc-rally-2027@tcmcc.org.nz
+DTSTAMP:20260914T033000Z
 DTSTART;VALUE=DATE:20270402
 DTEND;VALUE=DATE:20270405
 SUMMARY:New Plymouth Classic Motorcycle Club Rally
 LOCATION:Top 10 Holiday Park\, New Plymouth
-DESCRIPTION:New Plymouth Classic Motorcycle Club Rally. Organised by: New Plymouth Classic Motorcycle Club.
+DESCRIPTION:New Plymouth Classic Motorcycle Club Rally.
+CATEGORIES:Other Club
 END:VEVENT
 BEGIN:VEVENT
 UID:hbcmcc-50th-2027@tcmcc.org.nz
+DTSTAMP:20260914T033000Z
 DTSTART;VALUE=DATE:20270917
 DTEND;VALUE=DATE:20270920
 SUMMARY:Hawke’s Bay CMCC 50th Anniversary & National Classic Rally
 LOCATION:Stoney Creek Ranch\, Maraekakaho
-DESCRIPTION:Hawke’s Bay Classic Motorcycle Club 50th Anniversary and National Classic Rally. Organised by: Hawke’s Bay Classic Motorcycle Club.
+DESCRIPTION:Hawke’s Bay Classic Motorcycle Club 50th Anniversary and National Classic Rally.
+CATEGORIES:Other Club
 END:VEVENT
 END:VCALENDAR
