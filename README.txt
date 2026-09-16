@@ -1,16 +1,20 @@
-TCMCC calendar update — 14 September 2026
+TCMCC WEBSITE UPDATE — FROM OUR MEMBERS
+16 September 2026
 
-This package keeps the supplied latest index.html unchanged and updates only the calendar data files.
+Baseline: current known-good site following the 14 September East Cape Run Calendar deployment (#58).
 
-Upload/replace these three files in the website root:
-- index.html   (same latest master supplied by Bruce)
-- events.js   (adds Around East Cape Run, 28–30 Nov 2026)
-- tcmcc-events.ics   (adds the same event to the downloadable calendar)
+FILES TO UPLOAD TO GITHUB ROOT:
+- index.html
+- from-our-members.html
+- assets/member-stories/vincent-paper-plate-group.jpeg
+- assets/member-stories/trevor-hackett-norvin.jpeg
 
-New event:
-Around East Cape Run — 28–30 November 2026
-Gisborne Classic Motorcycle Club
-Meet Ōpōtiki Café 11:30 am–12:30 pm Saturday; Waihau Bay overnight; Gisborne Sunday; home Monday.
-Shared accommodation at Waihau Bay Hotel: $90.
-Contact Dal Jackson: 029 778 1326.
-Outside-club members welcome.
+WHAT CHANGED:
+- Replaced the homepage 'Coming soon' member-stories preview with a new 'From Our Members' current-content segment.
+- Added Neil “Barny” Barnard's Vincent Paper Plate Run report verbatim, with the two original images and captions.
+- Added a TCMCC context note identifying Neil, Chris Hewlett and Marty Hewlett as club members.
+- Added the 16 September Wednesday Ride — Tirau and Beyond report.
+- Historical Motorcycle Stories archive remains separate and unchanged.
+
+Suggested GitHub deployment name:
+2026-09-16 — From Our Members: Vincent + Wednesday Ride
