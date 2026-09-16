@@ -59,7 +59,7 @@
         "@id": "https://tcmcc.org.nz/#organization"
       },
       "image": "https://tcmcc.org.nz/assets/tcmcc-50-years-poster.jpg",
-      "url": "https://tcmcc.org.nz/#anniversary-detail"
+      "url": "https://tcmcc.org.nz/#anniversary"
     }
   ]
 }
@@ -76,7 +76,8 @@
   --line:#ddd7ca;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:70px}
 body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.5}
 a{color:inherit}
 .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
@@ -301,10 +302,10 @@ footer a{color:var(--gold)}
     <a href="#home">HOME</a>
     <a href="#who-we-are">WHO WE ARE</a>
     <a href="#anniversary">50TH ANNIVERSARY</a>
-    <a href="#rides">CALENDAR</a>
+    <a href="#calendar">CALENDAR</a>
     <a href="#club">OUR CLUB</a>
     <a href="#committee">COMMITTEE</a>
-    <a href="#archives">ARCHIVES</a>
+    <a href="#from-the-archives">ARCHIVES</a>
     <a href="#photos">PHOTOS</a>
       <a href="#newsletters">NEWSLETTERS</a>
     <a href="#join">JOIN US</a>
@@ -357,7 +358,7 @@ footer a{color:var(--gold)}
 
 
 
-<section id="welcome" class="section">
+<section class="section">
   <div class="wrap">
     <div class="kicker">Welcome to TCMCC</div>
     <h3>Keeping classic motorcycling alive since 1976</h3>
@@ -388,7 +389,7 @@ footer a{color:var(--gold)}
   </div>
 </section>
 
-<section id="anniversary-detail" class="section band">
+<section id="anniversary" class="section band">
   <div class="wrap anniversary-feature">
     <div>
       <div class="anniversary-poster">
@@ -423,7 +424,7 @@ footer a{color:var(--gold)}
   </div>
 </section>
 
-<section id="rides" class="section">
+<section id="calendar" class="section">
   <div class="wrap">
     <div class="kicker">Calendar</div>
     <h3>Upcoming Events</h3>
@@ -503,7 +504,7 @@ footer a{color:var(--gold)}
   </div>
 </section>
 
-<section id="member-stories" class="section band">
+<section id="from-our-members" class="section band">
   <div class="wrap">
     <div class="kicker">From Our Members</div>
     <h3>Out riding, touring and enjoying the bikes</h3>
@@ -534,22 +535,22 @@ footer a{color:var(--gold)}
   </div>
 </section>
 
-<section id="archives" class="section band">
+<section id="from-the-archives" class="section band">
   <div class="wrap">
     <div class="kicker">From the archives</div>
     <h3>50 years of motorcycles, people and stories</h3>
     <div class="archive-grid">
-      <a id="letters-from-the-past" class="archive-item" href="archive-1976.html#documents" style="color:inherit;text-decoration:none">
+      <a class="archive-item" href="archive-1976.html#documents" style="color:inherit;text-decoration:none">
         <h4>Letters from the Past</h4>
         <p>Selected extracts and scans from the Club's earliest newsletters.</p>
         <p><strong>EXPLORE THE ORIGINALS →</strong></p>
       </a>
-      <a id="club-history" class="archive-item" href="archive-1976.html#beginning" style="color:inherit;text-decoration:none">
+      <a class="archive-item" href="archive-1976.html#beginning" style="color:inherit;text-decoration:none">
         <h4>1976 — Where it began</h4>
         <p>The first meeting, first run, founding members and the motorcycles that brought them together.</p>
         <p><strong>READ THE STORY →</strong></p>
       </a>
-      <a id="motorcycle-stories" class="archive-item" href="motorcycle-stories.html" style="color:inherit;text-decoration:none">
+      <a class="archive-item" href="motorcycle-stories.html" style="color:inherit;text-decoration:none">
         <h4>Motorcycle Stories</h4>
         <p>Photographs from the historical Club records. More motorcycles and their stories will be added later.</p>
         <p><strong>EXPLORE THE PHOTOGRAPHS →</strong></p>
