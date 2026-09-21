@@ -17,7 +17,7 @@ window.TCMCC_EVENT_DATA = {
       location: "Tauranga",
       description: "Three-day celebration of 50 years of the Tauranga Classic Motorcycle Club, with motorcycle displays, start-up sessions, visiting clubs and the Sunday celebration luncheon.",
       category: "TCMCC",
-      link: "#anniversary-detail",
+      link: "#anniversary",
       organiser: "Tauranga Classic Motorcycle Club"
     },
     {
