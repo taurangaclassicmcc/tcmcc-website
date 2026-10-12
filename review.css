@@ -8,3 +8,12 @@ html{scroll-padding-top:90px} body{overflow-wrap:break-word} .brand{padding:20px
 @media(max-width:760px){.brand{padding:16px 18px}.topic-links{grid-template-columns:1fr 1fr}.topics{padding:28px 0}.topic-links a{padding:13px}.brand h1{font-size:1.35rem}.brand .sub{font-size:.7rem}.columns>*{min-width:0}.navbar{gap:0}footer a{overflow-wrap:anywhere}}
 @media(max-width:400px){.topic-links{grid-template-columns:1fr}.brand{gap:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Introduce the new identity alongside the existing circular badge. */
+.brand .brand-new-logo{width:210px;height:105px;object-fit:contain;clip-path:none;border-radius:3px;margin-left:auto;flex-shrink:0}
+@media(max-width:760px){
+  .brand{flex-wrap:wrap}
+  .brand>div{flex:1;min-width:0}
+  .brand .brand-new-logo{width:160px !important;height:80px !important;margin-left:82px}
+}
+@media(max-width:420px){.brand .brand-new-logo{margin-left:70px}}
