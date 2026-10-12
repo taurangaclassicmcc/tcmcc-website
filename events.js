@@ -30,6 +30,19 @@ window.TCMCC_EVENT_DATA = {
       category: "Other Club"
     },
     {
+      "id": "rac-show-shine-2026",
+      "title": "Riders Against Cancer Show ’n’ Shine",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "venue": "Manchester Square",
+      "location": "Feilding, Manawatū",
+      "category": "Other Club",
+      "description": "Motorcycle charity show supporting the Cancer Society, Manawatū. 10:00 am–1:00 pm, with classic and vintage categories. Held on the same weekend as the NZCMRR Spring Classic.",
+      "time": "10:00",
+      "organiser": "Riders Against Cancer – Central Branch",
+      "link": "https://www.racnz.co.nz/central"
+    },
+    {
       title: "Joy McKean Bantam Big Day Out",
       start: "2026-11-08",
       end: "2026-11-08",
@@ -84,6 +97,18 @@ window.TCMCC_EVENT_DATA = {
       location: "New Plymouth",
       description: "New Plymouth Classic Motorcycle Club Rally.",
       category: "Other Club"
+    },
+    {
+      "id": "bsa-national-rally-2027",
+      "title": "BSA National Rally",
+      "start": "2027-04-02",
+      "end": "2027-04-04",
+      "venue": "Cracroft Guiding Centre",
+      "location": "Christchurch, Canterbury",
+      "category": "Other Club",
+      "description": "National rally organised by the Canterbury BSA Motorcycle Owners Club. Advertised in Southern Star, September–October 2026; further details to follow. Falls on the same dates as the New Plymouth Classic Motorcycle Club Rally.",
+      "organiser": "Canterbury BSA Motorcycle Owners Club",
+      "link": "other-club-news/southern-star-september-october-2026.pdf"
     },
     {
       title: "Hawke’s Bay CMCC 50th Anniversary & National Classic Rally",

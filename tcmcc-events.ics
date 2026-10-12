@@ -105,4 +105,25 @@ LOCATION:Stoney Creek Ranch\, Maraekakaho
 DESCRIPTION:Hawke’s Bay Classic Motorcycle Club 50th Anniversary and National Classic Rally.
 CATEGORIES:Other Club
 END:VEVENT
+BEGIN:VEVENT
+UID:rac-show-shine-2026@tcmcc.org.nz
+DTSTAMP:20261012T050000Z
+DTSTART:20261031T210000Z
+DTEND:20261101T000000Z
+SUMMARY:Riders Against Cancer Show ’n’ Shine
+LOCATION:Manchester Square\, Feilding\, Manawatū
+DESCRIPTION:Motorcycle charity show supporting the Cancer Society\, Manawatū. 10:00 am–1:00 pm\, with classic and vintage categories. Held on the same weekend as the NZCMRR Spring Classic.
+URL:https://www.racnz.co.nz/central
+CATEGORIES:Other Club
+END:VEVENT
+BEGIN:VEVENT
+UID:bsa-national-rally-2027@tcmcc.org.nz
+DTSTAMP:20261012T050000Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270405
+SUMMARY:BSA National Rally
+LOCATION:Cracroft Guiding Centre\, Christchurch\, Canterbury
+DESCRIPTION:National rally organised by the Canterbury BSA Motorcycle Owners Club. Advertised in Southern Star\, September–October 2026\; further details to follow. Falls on the same dates as the New Plymouth Classic Motorcycle Club Rally.
+CATEGORIES:Other Club
+END:VEVENT
 END:VCALENDAR
