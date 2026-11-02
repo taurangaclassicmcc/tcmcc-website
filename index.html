@@ -722,7 +722,8 @@ footer a{color:var(--gold)}
     el.className='calendar-event'+(e.category==='TCMCC'?' tcmcc':'');
     const title=e.link?`<a href="${e.link}">${e.title}</a>`:e.title;
     const organiser=e.organiser?`<p><strong>Organised by:</strong> ${e.organiser}</p>`:'';
-    el.innerHTML=`<div class="calendar-date">${fmtRange(e.start,e.end)}</div><div class="calendar-body"><h4>${title}</h4><div class="calendar-location">📍 ${e.venue}<br><span style="font-weight:400">${e.location}</span></div><p>${e.description}</p>${organiser}<span class="calendar-tag">${e.category}</span></div>`;
+    const contact=e.contact_email?`<p><strong>Contact:</strong> <a href="mailto:${e.contact_email}">${e.contact_email}</a></p>`:'';
+    el.innerHTML=`<div class="calendar-date">${fmtRange(e.start,e.end)}</div><div class="calendar-body"><h4>${title}</h4><div class="calendar-location">📍 ${e.venue}<br><span style="font-weight:400">${e.location}</span></div><p>${e.description}</p>${organiser}${contact}<span class="calendar-tag">${e.category}</span></div>`;
     list.appendChild(el);
   });
 })();

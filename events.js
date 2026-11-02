@@ -99,7 +99,8 @@ window.TCMCC_EVENT_DATA = {
       "category": "Other Club",
       "organiser": "Hawke’s Bay Classic Motorcycle Club",
       "description": "Save the date for the 38th Mail Run Rally. Starts at 10:00 am from Kaimanawa Street, Taupō.",
-      "time": "10:00"
+      "time": "10:00",
+      "contact_email": "hbcmcmailrun@gmail.com"
     },
     {
       title: "New Plymouth Classic Motorcycle Club Rally",
