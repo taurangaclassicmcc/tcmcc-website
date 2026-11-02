@@ -136,4 +136,17 @@ DESCRIPTION:Save the date for the 38th Mail Run Rally. Starts at 10:00 am from K
 CATEGORIES:Other Club
 CONTACT:hbcmcmailrun@gmail.com
 END:VEVENT
+BEGIN:VEVENT
+UID:classic-fighters-omaka-2027@tcmcc.org.nz
+DTSTAMP:20261102T060000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270329
+SUMMARY:Marlborough Lines Classic Fighters Omaka Airshow
+LOCATION:Omaka Aerodrome\, Blenheim\, Marlborough
+DESCRIPTION:Easter weekend airshow celebrating the Royal New Zealand Air Fo
+ rce’s 90th anniversary\, with historic warbirds\, modern military aircra
+ ft\, classic cars\, fireworks and family entertainment.
+URL:https://www.classicfighters.co.nz/
+CATEGORIES:Other Event
+END:VEVENT
 END:VCALENDAR
