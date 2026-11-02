@@ -77,12 +77,14 @@ CATEGORIES:Other Club
 END:VEVENT
 BEGIN:VEVENT
 UID:tcmcc-christmas-dinner-2026@tcmcc.org.nz
-DTSTAMP:20260914T033000Z
-DTSTART;VALUE=DATE:20261213
-DTEND;VALUE=DATE:20261214
+DTSTAMP:20261102T060000Z
+SEQUENCE:1
+DTSTART;TZID=Pacific/Auckland:20261213T170000
 SUMMARY:TCMCC Christmas Dinner
 LOCATION:Tauranga Citizens Club
-DESCRIPTION:Club Christmas dinner. Booking confirmed\; menu\, time\, cost and attendance details to follow.
+DESCRIPTION:Gather from 5:00 pm for dinner at 6:00 pm. Cost: $45\, same as 
+ last year. Please let Pat Smith know before 9 December 2026: phone 021 239
+ 4273 or email gavinpat@xtra.co.nz.
 CATEGORIES:TCMCC
 END:VEVENT
 BEGIN:VEVENT
