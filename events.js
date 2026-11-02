@@ -90,6 +90,18 @@ window.TCMCC_EVENT_DATA = {
       organiser: "Tauranga Classic Motorcycle Club"
     },
     {
+      "id": "hbcmcc-mail-run-rally-2027",
+      "start": "2027-03-20",
+      "end": "2027-03-20",
+      "title": "Hawkes Bay Classic MC Mail Run 2027",
+      "location": "Taupō",
+      "venue": "Kaimanawa Street, Taupō",
+      "category": "Other Club",
+      "organiser": "Hawke’s Bay Classic Motorcycle Club",
+      "description": "Save the date for the 38th Mail Run Rally. Starts at 10:00 am from Kaimanawa Street, Taupō.",
+      "time": "10:00"
+    },
+    {
       title: "New Plymouth Classic Motorcycle Club Rally",
       start: "2027-04-02",
       end: "2027-04-04",

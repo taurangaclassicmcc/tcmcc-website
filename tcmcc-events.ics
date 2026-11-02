@@ -126,4 +126,13 @@ LOCATION:Cracroft Guiding Centre\, Christchurch\, Canterbury
 DESCRIPTION:National rally organised by the Canterbury BSA Motorcycle Owners Club. Advertised in Southern Star\, September–October 2026\; further details to follow. Falls on the same dates as the New Plymouth Classic Motorcycle Club Rally.
 CATEGORIES:Other Club
 END:VEVENT
+BEGIN:VEVENT
+UID:hbcmcc-mail-run-rally-2027@tcmcc.org.nz
+DTSTAMP:20261102T004811Z
+DTSTART:20270319T210000Z
+SUMMARY:Hawkes Bay Classic MC Mail Run 2027
+LOCATION:Kaimanawa Street\, Taupō
+DESCRIPTION:Save the date for the 38th Mail Run Rally. Starts at 10:00 am from Kaimanawa Street\, Taupō.
+CATEGORIES:Other Club
+END:VEVENT
 END:VCALENDAR
