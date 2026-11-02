@@ -271,6 +271,17 @@ footer a{color:var(--gold)}
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" href="assets/tcmcc-badge.png">
 <link rel="stylesheet" href="review.css">
+<style>
+.latest-updates{margin:0 0 24px;padding:22px 24px;background:#fbf6e8;border:1px solid #e5d6aa;border-left:4px solid #967321;border-radius:8px}
+.latest-updates-header{display:flex;align-items:baseline;justify-content:space-between;gap:8px 20px;flex-wrap:wrap}
+.topics .latest-updates h3{margin:0;color:#19324a;font-size:1.2rem;line-height:1.35}
+.latest-updates time{font-size:.88rem;color:#62583f}
+.latest-updates ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;list-style:none;margin:16px 0 0;padding:0}
+.latest-updates a{display:block;color:#19324a;text-decoration:underline;text-underline-offset:3px;line-height:1.5}
+.latest-updates a:hover{color:#795b16}
+@media(max-width:650px){.latest-updates{padding:18px}.latest-updates ul{grid-template-columns:1fr}}
+</style>
+
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -296,7 +307,21 @@ footer a{color:var(--gold)}
   </div>
 </section>
 
-<section id="topics" class="topics section"><div class="wrap"><div class="kicker">Explore the club</div><h2>Find what interests you</h2><div class="topic-links"><a href="#from-our-members">Members’ stories <span>Ride reports and club adventures →</span></a><a href="#from-the-archives">From the archives <span>Our history and classic machines →</span></a><a href="#photos">Photo gallery <span>People, motorcycles and places →</span></a><a href="#newsletters">Newsletters <span>Read the latest club news →</span></a><a href="#other-club-news">Other club news <span>Newsletters and links from around the country →</span></a><a href="#news-and-other-miscellaneous">News and Other Miscellaneous <span>Notices, items for sale and other news →</span></a><a href="#committee">Meet the committee <span>Who to contact for a hand →</span></a><a href="#annual-bbq">Annual BBQ <span>A chance to catch up →</span></a></div></div></section>
+<section id="topics" class="topics section"><div class="wrap"><div class="kicker">Explore the club</div><h2>Find what interests you</h2>
+<!-- Replace these highlights and the update date when new material is added. -->
+<aside class="latest-updates" aria-labelledby="latest-updates-title">
+  <div class="latest-updates-header">
+    <h3 id="latest-updates-title">What’s new — November 2026</h3>
+    <time datetime="2026-11-02">Updated 2 November 2026</time>
+  </div>
+  <ul>
+    <li><a href="graham-holmes.html"><strong>Motorcycle stories:</strong> Graham Holmes’ story →</a></li>
+    <li><a href="#classic-flyers-50th"><strong>Photos:</strong> 50th Anniversary Display - Classic Flyers →</a></li>
+    <li><a href="newsletters/TCMCC%20November%202026%20Newsletter.pdf" target="_blank" rel="noopener"><strong>Club newsletter:</strong> November Issue 3 →</a></li>
+    <li><a href="other-club-news/wanganui-cmc-november-2026.pdf" target="_blank" rel="noopener"><strong>Other club news:</strong> Wanganui’s November newsletter →</a></li>
+  </ul>
+</aside>
+<div class="topic-links"><a href="#from-our-members">Members’ stories <span>Ride reports and club adventures →</span></a><a href="#from-the-archives">From the archives <span>Our history and classic machines →</span></a><a href="#photos">Photo gallery <span>People, motorcycles and places →</span></a><a href="#newsletters">Newsletters <span>Read the latest club news →</span></a><a href="#other-club-news">Other club news <span>Newsletters and links from around the country →</span></a><a href="#news-and-other-miscellaneous">News and Other Miscellaneous <span>Notices, items for sale and other news →</span></a><a href="#committee">Meet the committee <span>Who to contact for a hand →</span></a><a href="#annual-bbq">Annual BBQ <span>A chance to catch up →</span></a></div></div></section>
 <section class="classic-era-strip" aria-label="Classic motorcycles through the eras">
   <div class="classic-era-grid">
     <img src="assets/eras/potter-early-motorcycle.jpg" alt="Early pioneering motorcycle">
