@@ -11,9 +11,12 @@ html{scroll-padding-top:90px} body{overflow-wrap:break-word} .brand{padding:20px
 
 /* Introduce the new identity alongside the existing circular badge. */
 .brand .brand-new-logo{width:210px;height:105px;object-fit:contain;clip-path:none;border-radius:3px;margin-left:auto;flex-shrink:0}
+/* Give the club name its own row on phones; retain the heritage badge beside the Mount logo. */
 @media(max-width:760px){
-  .brand{flex-wrap:wrap}
-  .brand>div{flex:1;min-width:0}
-  .brand .brand-new-logo{width:160px !important;height:80px !important;margin-left:82px}
+  .brand{display:grid;grid-template-columns:minmax(0,1fr) 52px;gap:14px 18px;align-items:center}
+  .brand>div{grid-column:1/-1;grid-row:1;min-width:0}
+  .brand h1{font-size:clamp(1.45rem,6vw,2rem);line-height:1.15}
+  .brand .sub{font-size:.75rem;line-height:1.4}
+  .brand>img:not(.brand-new-logo){grid-column:2;grid-row:2;width:52px !important;height:52px !important}
+  .brand .brand-new-logo{grid-column:1;grid-row:2;width:100% !important;max-width:260px;height:auto !important;margin:0;justify-self:start}
 }
-@media(max-width:420px){.brand .brand-new-logo{margin-left:70px}}
