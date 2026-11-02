@@ -85,7 +85,9 @@ window.TCMCC_EVENT_DATA = {
       end: "2026-12-13",
       venue: "Tauranga Citizens Club",
       location: "Tauranga",
-      description: "Club Christmas dinner. Booking confirmed; menu, time, cost and attendance details to follow.",
+      description: "Gather from 5:00 pm for dinner at 6:00 pm. Cost: $45, same as last year. Please let Pat Smith know before 9 December 2026: phone 021 2394273 or email gavinpat@xtra.co.nz.",
+      time: "17:00",
+      contact_email: "gavinpat@xtra.co.nz",
       category: "TCMCC",
       organiser: "Tauranga Classic Motorcycle Club"
     },
