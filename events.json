@@ -105,6 +105,18 @@
       "contact_email": "hbcmcmailrun@gmail.com"
     },
     {
+      "id": "classic-fighters-omaka-2027",
+      "title": "Marlborough Lines Classic Fighters Omaka Airshow",
+      "start": "2027-03-26",
+      "end": "2027-03-28",
+      "venue": "Omaka Aerodrome",
+      "location": "Blenheim, Marlborough",
+      "category": "Other Event",
+      "description": "Easter weekend airshow celebrating the Royal New Zealand Air Force’s 90th anniversary, with historic warbirds, modern military aircraft, classic cars, fireworks and family entertainment.",
+      "organiser": "Classic Fighters Omaka",
+      "link": "https://www.classicfighters.co.nz/"
+    },
+    {
       "id": "npcmc-rally-2027",
       "start": "2027-04-02",
       "end": "2027-04-04",
