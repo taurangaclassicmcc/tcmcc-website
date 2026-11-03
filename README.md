@@ -15,7 +15,7 @@ GitHub Pages-ready version of the TCMCC website prototype.
 ## Main files
 
 - `index.html` — website homepage and current single-page site.
-- `assets/tcmcc-badge.png` — club badge used in the header.
+- `assets/tcmcc-header-logo.png` — club logo used in the homepage header.
 - `.nojekyll` — tells GitHub Pages to serve the site as plain static files.
 
 ## Updating the site
